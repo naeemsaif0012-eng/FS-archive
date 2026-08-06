@@ -1,0 +1,190 @@
+export interface Product {
+  id: string
+  name: string
+  subtitle: string
+  price: number
+  category: string
+  badge?: 'New' | 'Limited'
+  image: string
+  bgClass: string
+}
+
+export const bagsProducts: Product[] = [
+  {
+    id: 'la-calla-tote',
+    name: 'La Calla Tote',
+    subtitle: 'Ivory Calfskin',
+    price: 2400,
+    category: 'tote',
+    badge: 'New',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn',
+    bgClass: 'bg-surface-container-high',
+  },
+  {
+    id: 'le-minuit-clutch',
+    name: 'Le Minuit Clutch',
+    subtitle: 'Black Satin',
+    price: 890,
+    category: 'clutch',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd',
+    bgClass: 'bg-surface-container',
+  },
+  {
+    id: 'rosette-bucket-bag',
+    name: 'Rosette Bucket Bag',
+    subtitle: 'Dusty Rose Leather',
+    price: 1650,
+    category: 'tote',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL',
+    bgClass: 'bg-surface-container-high',
+  },
+  {
+    id: 'lheure-bleue-crossbody',
+    name: "L'Heure Bleue Crossbody",
+    subtitle: 'Navy Calfskin',
+    price: 1200,
+    category: 'crossbody',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn',
+    bgClass: 'bg-surface-container-highest',
+  },
+  {
+    id: 'le-grand-cabas',
+    name: 'Le Grand Cabas',
+    subtitle: 'Cognac Grain Leather',
+    price: 3100,
+    category: 'tote',
+    badge: 'Limited',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd',
+    bgClass: 'bg-surface-container',
+  },
+  {
+    id: 'petale-mini-bag',
+    name: 'Pétale Mini Bag',
+    subtitle: 'Blush Suede',
+    price: 780,
+    category: 'clutch',
+    badge: 'New',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL',
+    bgClass: 'bg-surface-container-high',
+  },
+]
+
+export const jewelryProducts: Product[] = [
+  {
+    id: 'fil-dor-chain',
+    name: "Fil d'Or Chain",
+    subtitle: '18k Gold · 45cm',
+    price: 890,
+    category: 'necklace',
+    badge: 'New',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL',
+    bgClass: 'bg-surface-container',
+  },
+  {
+    id: 'rosette-stud-earrings',
+    name: 'Rosette Stud Earrings',
+    subtitle: '18k Gold & Diamond',
+    price: 1200,
+    category: 'earring',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn',
+    bgClass: 'bg-surface-container-high',
+  },
+  {
+    id: 'heritage-cuff',
+    name: 'Heritage Cuff',
+    subtitle: 'Polished 18k Gold',
+    price: 2100,
+    category: 'ring',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd',
+    bgClass: 'bg-surface-container-highest',
+  },
+  {
+    id: 'lumiere-pendant',
+    name: 'Lumière Pendant',
+    subtitle: '18k Gold & South Sea Pearl',
+    price: 680,
+    category: 'necklace',
+    badge: 'New',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL',
+    bgClass: 'bg-surface-container-high',
+  },
+  {
+    id: 'champagne-bangle-set',
+    name: 'Champagne Bangle Set',
+    subtitle: 'Rose Gold · Set of 3',
+    price: 950,
+    category: 'ring',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd',
+    bgClass: 'bg-surface-container',
+  },
+  {
+    id: 'eclat-ring',
+    name: 'Éclat Ring',
+    subtitle: 'Diamond Pavé · 18k Gold',
+    price: 3400,
+    category: 'ring',
+    badge: 'Limited',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn',
+    bgClass: 'bg-surface-container-high',
+  },
+]
+
+export const accessoriesProducts: Product[] = [
+  {
+    id: 'heritage-silk-scarf',
+    name: 'Heritage Silk Scarf',
+    subtitle: 'Ivory & Gold Print · 90×90cm',
+    price: 620,
+    category: 'scarf',
+    badge: 'New',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd',
+    bgClass: 'bg-surface-container-high',
+  },
+  {
+    id: 'tourbillon-no1',
+    name: 'Tourbillon No. 1',
+    subtitle: 'Rose Gold · Mechanical',
+    price: 18500,
+    category: 'watch',
+    badge: 'Limited',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuANMqbxmRClPeN4wqgJNK9lX_xh8qwucq78m6OK_9UjCrS0uVO6ZxxXLZ-v6mbv267Z3D_mT5hVU0eCwluNqnU7FlyFvsVE986l_Cewo03tbFtMbIfElwrIDNiDFojHXaRd_JgJHrIuF3Tv2xNqbbQnD64NIGkNk06hS4AOBwm3-KZ6ukm9iTlaWvWCAXNx3__Gbq_4XE5dNu2rNyCQDIHnM2McaKJuYlUU7Dr1P-PcZ7m6sGyeO6tQ',
+    bgClass: 'bg-surface-container',
+  },
+  {
+    id: 'soie-dor-scarf',
+    name: "Soie d'Or Scarf",
+    subtitle: 'Dusty Rose · 70×70cm',
+    price: 580,
+    category: 'scarf',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn',
+    bgClass: 'bg-surface-container-highest',
+  },
+  {
+    id: 'atelier-watch',
+    name: 'Atelier Watch',
+    subtitle: 'Steel & Rose Gold · Automatic',
+    price: 4200,
+    category: 'watch',
+    badge: 'New',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuANMqbxmRClPeN4wqgJNK9lX_xh8qwucq78m6OK_9UjCrS0uVO6ZxxXLZ-v6mbv267Z3D_mT5hVU0eCwluNqnU7FlyFvsVE986l_Cewo03tbFtMbIfElwrIDNiDFojHXaRd_JgJHrIuF3Tv2xNqbbQnD64NIGkNk06hS4AOBwm3-KZ6ukm9iTlaWvWCAXNx3__Gbq_4XE5dNu2rNyCQDIHnM2McaKJuYlUU7Dr1P-PcZ7m6sGyeO6tQ',
+    bgClass: 'bg-surface-container-high',
+  },
+  {
+    id: 'velours-headband',
+    name: 'Velours Headband',
+    subtitle: 'Bordeaux Velvet',
+    price: 220,
+    category: 'other',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL',
+    bgClass: 'bg-surface-container',
+  },
+  {
+    id: 'lheure-watch',
+    name: "L'Heure Watch",
+    subtitle: 'Minimalist White Dial · Quartz',
+    price: 2800,
+    category: 'watch',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuANMqbxmRClPeN4wqgJNK9lX_xh8qwucq78m6OK_9UjCrS0uVO6ZxxXLZ-v6mbv267Z3D_mT5hVU0eCwluNqnU7FlyFvsVE986l_Cewo03tbFtMbIfElwrIDNiDFojHXaRd_JgJHrIuF3Tv2xNqbbQnD64NIGkNk06hS4AOBwm3-KZ6ukm9iTlaWvWCAXNx3__Gbq_4XE5dNu2rNyCQDIHnM2McaKJuYlUU7Dr1P-PcZ7m6sGyeO6tQ',
+    bgClass: 'bg-surface-container-high',
+  },
+]

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Bags | MAISON ROSE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#ffb1c1","secondary-container": "#efdee0","on-primary-container": "#5c2634",
+          "secondary-fixed": "#efdee0","on-secondary-fixed-variant": "#4f4446","surface-container-low": "#fbf2ec",
+          "surface-dim": "#e1d8d3","error": "#ba1a1a","surface-variant": "#eae1db","background": "#fff8f4",
+          "tertiary-fixed-dim": "#ffb2bf","surface-container": "#f5ece6","inverse-on-surface": "#f8efe9",
+          "surface": "#fff8f4","on-secondary": "#ffffff","primary-fixed-dim": "#ffb1c1","secondary": "#675b5d",
+          "on-primary": "#ffffff","outline-variant": "#d6c1c4","tertiary-fixed": "#ffd9de","primary": "#8a4c5a",
+          "on-error": "#ffffff","on-primary-fixed": "#380919","on-primary-fixed-variant": "#6e3445",
+          "inverse-surface": "#34302c","error-container": "#ffdad6","primary-fixed": "#ffd9df",
+          "on-error-container": "#93000a","on-secondary-fixed": "#22191b","on-surface": "#1f1b17",
+          "surface-container-high": "#efe7e1","on-tertiary-fixed-variant": "#80243e",
+          "surface-container-lowest": "#ffffff","surface-bright": "#fff8f4","on-tertiary-container": "#6c132f",
+          "on-tertiary-fixed": "#3f0016","on-surface-variant": "#524345","surface-container-highest": "#eae1db",
+          "on-background": "#1f1b17","surface-tint": "#8a4c5a","tertiary-container": "#f17c96",
+          "outline": "#847375","primary-container": "#d68c9c","secondary-fixed-dim": "#d3c3c5",
+          "on-tertiary": "#ffffff","on-secondary-container": "#6e6163","tertiary": "#9f3c55"
+        },
+        borderRadius: { "DEFAULT": "0.125rem","lg": "0.25rem","xl": "0.5rem","full": "9999px" },
+        spacing: { "gutter": "24px","unit": "8px","container-max": "1280px","margin-mobile": "20px","margin-desktop": "64px" },
+        fontFamily: {
+          "fraunces": ["Fraunces", "serif"],"manrope": ["Manrope", "sans-serif"],
+          "headline-lg": ["EB Garamond"],"headline-md": ["EB Garamond"],"body-md": ["Hanken Grotesk"]
+        },
+        fontSize: {
+          "headline-xl": ["64px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "400" }],
+          "headline-lg": ["48px", { lineHeight: "1.2", fontWeight: "400" }],
+          "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+          "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "600" }]
+        }
+      }
+    }
+  }
+</script>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Hanken+Grotesk:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>
+  body { background-color: #fff8f4; color: #1f1b17; overflow-x: hidden; }
+  .stagger-up { opacity: 0; transform: translateY(24px); transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .stagger-up.in-view { opacity: 1; transform: translateY(0); }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .bg-ink-plum { background-color: #241019; }
+  .text-ink-plum { color: #241019; }
+  .border-champagne { border-color: #C9A66B; }
+  .bg-bone { background-color: #fff8f4; }
+  .quote-rule { width: 48px; height: 1px; background: #C9A66B; }
+  #mobile-drawer { transform: translateX(-100%); transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  #mobile-drawer.open { transform: translateX(0); }
+  #drawer-overlay { opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+  #drawer-overlay.open { opacity: 1; pointer-events: all; }
+  #cart-drawer { transform: translateX(100%); transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  #cart-drawer.open { transform: translateX(0); }
+  #search-overlay { opacity: 0; pointer-events: none; transition: opacity 0.3s ease; }
+  #search-overlay.open { opacity: 1; pointer-events: all; }
+  .product-card { transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .product-card:hover { transform: translateY(-6px); }
+  .product-card:hover .product-img { transform: scale(1.04); }
+  .product-img { transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .product-card:hover .product-cta { opacity: 1; transform: translateY(0); }
+  .product-cta { opacity: 0; transform: translateY(8px); transition: all 0.3s ease; }
+  #main-header { transition: background-color 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease; }
+  #main-header.scrolled { background-color: rgba(255,255,255,0.92) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(36,16,25,0.06); }
+  .filter-pill { transition: all 0.2s ease; cursor: pointer; }
+  .filter-pill.active { background-color: #8a4c5a; color: #ffffff; border-color: #8a4c5a; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- SEARCH OVERLAY -->
+<div id="search-overlay" class="fixed inset-0 z-[100] bg-surface/95 backdrop-blur-md flex flex-col items-center justify-center px-6">
+  <button onclick="closeSearch()" class="absolute top-6 right-6 md:right-16"><span class="material-symbols-outlined text-on-surface text-[28px]">close</span></button>
+  <p class="font-manrope text-[11px] uppercase tracking-[0.18em] text-on-surface-variant mb-6">Search Maison Rose</p>
+  <div class="w-full max-w-2xl border-b border-on-surface flex items-center gap-4 pb-3">
+    <span class="material-symbols-outlined text-on-surface-variant text-[22px]">search</span>
+    <input id="search-input" type="text" placeholder="Bags, Jewelry, Accessories…" class="flex-1 bg-transparent font-fraunces text-3xl text-on-background placeholder-on-surface-variant/40 focus:outline-none">
+  </div>
+  <div class="mt-10 flex flex-wrap gap-3 justify-center">
+    <span onclick="window.location='bags.html'" class="px-4 py-2 rounded-full border border-outline-variant font-manrope text-xs tracking-widest uppercase text-on-surface-variant hover:border-primary hover:text-primary cursor-pointer transition-colors">Bags</span>
+    <span onclick="window.location='jewelry.html'" class="px-4 py-2 rounded-full border border-outline-variant font-manrope text-xs tracking-widest uppercase text-on-surface-variant hover:border-primary hover:text-primary cursor-pointer transition-colors">Jewelry</span>
+    <span onclick="window.location='accessories.html'" class="px-4 py-2 rounded-full border border-outline-variant font-manrope text-xs tracking-widest uppercase text-on-surface-variant hover:border-primary hover:text-primary cursor-pointer transition-colors">Accessories</span>
+  </div>
+</div>
+
+<!-- CART DRAWER -->
+<div id="cart-drawer" class="fixed top-0 right-0 h-full w-full max-w-md z-[90] bg-surface-container-lowest shadow-2xl flex flex-col">
+  <div class="flex items-center justify-between px-8 py-6 border-b border-outline-variant">
+    <h3 class="font-fraunces text-xl text-on-background">Your Bag</h3>
+    <button onclick="closeCart()" class="text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">close</span></button>
+  </div>
+  <div class="flex-1 overflow-y-auto px-8 py-6" id="cart-items-container">
+    <p class="font-manrope text-sm text-on-surface-variant text-center mt-12">Your bag is empty.</p>
+  </div>
+  <div class="px-8 py-6 border-t border-outline-variant space-y-4">
+    <div class="flex justify-between font-manrope text-sm text-on-surface-variant">
+      <span>Subtotal</span><span class="text-on-background font-medium" id="cart-subtotal">€ 0</span>
+    </div>
+    <button class="w-full h-[52px] bg-tertiary text-on-tertiary font-manrope text-xs uppercase tracking-widest hover:bg-primary transition-colors duration-300">Proceed to Checkout</button>
+    <button onclick="closeCart()" class="w-full h-[40px] border border-outline-variant text-on-surface-variant font-manrope text-xs uppercase tracking-widest hover:border-primary hover:text-primary transition-colors duration-300">Continue Shopping</button>
+  </div>
+</div>
+<div id="cart-overlay" class="fixed inset-0 z-[80] bg-ink-plum/30 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" onclick="closeCart()"></div>
+
+<!-- MOBILE DRAWER -->
+<div id="drawer-overlay" class="fixed inset-0 z-[60] bg-ink-plum/40 backdrop-blur-sm" onclick="closeDrawer()"></div>
+<div id="mobile-drawer" class="fixed top-0 left-0 h-full w-4/5 max-w-xs z-[70] bg-surface-container-lowest flex flex-col shadow-2xl">
+  <div class="flex items-center justify-between px-6 py-6 border-b border-outline-variant">
+    <a href="index.html" class="font-fraunces text-lg tracking-widest uppercase text-on-background">MAISON ROSE</a>
+    <button onclick="closeDrawer()"><span class="material-symbols-outlined text-[22px] text-on-surface-variant">close</span></button>
+  </div>
+  <nav class="flex-1 overflow-y-auto px-6 py-8 space-y-1">
+    <a href="bags.html" class="block py-4 border-b border-outline-variant/40 font-manrope text-sm uppercase tracking-widest text-tertiary font-semibold">Bags</a>
+    <a href="jewelry.html" class="block py-4 border-b border-outline-variant/40 font-manrope text-sm uppercase tracking-widest text-on-background hover:text-primary transition-colors">Jewelry</a>
+    <a href="accessories.html" class="block py-4 border-b border-outline-variant/40 font-manrope text-sm uppercase tracking-widest text-on-background hover:text-primary transition-colors">Accessories</a>
+    <a href="#" class="block py-4 border-b border-outline-variant/40 font-manrope text-sm uppercase tracking-widest text-on-background hover:text-primary transition-colors">Heritage</a>
+    <a href="#" class="block py-4 border-b border-outline-variant/40 font-manrope text-sm uppercase tracking-widest text-on-background hover:text-primary transition-colors">Atelier</a>
+  </nav>
+</div>
+
+<!-- HEADER -->
+<header class="fixed top-0 w-full z-50 bg-bone" id="main-header">
+  <div class="flex items-center px-5 md:px-margin-desktop py-5 w-full">
+    <div class="flex-1 flex items-center">
+      <button class="md:hidden active:scale-95 transition-transform" onclick="openDrawer()">
+        <span class="material-symbols-outlined font-light text-[24px]">menu</span>
+      </button>
+      <nav class="hidden md:flex gap-8 items-center">
+        <a class="font-manrope text-xs uppercase tracking-widest text-tertiary font-semibold" href="bags.html">Bags</a>
+        <a class="font-manrope text-xs uppercase tracking-widest text-on-background opacity-70 hover:opacity-100 hover:text-tertiary transition-all duration-300" href="jewelry.html">Jewelry</a>
+        <a class="font-manrope text-xs uppercase tracking-widest text-on-background opacity-70 hover:opacity-100 hover:text-tertiary transition-all duration-300" href="accessories.html">Accessories</a>
+      </nav>
+    </div>
+    <div class="flex-shrink-0 px-4">
+      <a class="font-fraunces text-xl md:text-2xl tracking-widest text-on-background uppercase whitespace-nowrap" href="index.html">MAISON ROSE</a>
+    </div>
+    <div class="flex-1 flex items-center justify-end gap-6">
+      <nav class="hidden md:flex gap-8 items-center">
+        <a class="font-manrope text-xs uppercase tracking-widest text-on-background opacity-70 hover:opacity-100 hover:text-tertiary transition-all duration-300" href="#">Heritage</a>
+        <a class="font-manrope text-xs uppercase tracking-widest text-on-background opacity-70 hover:opacity-100 hover:text-tertiary transition-all duration-300" href="#">Atelier</a>
+      </nav>
+      <div class="flex gap-3 items-center">
+        <button onclick="openSearch()" class="active:scale-95 transition-transform text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined font-light text-[22px]">search</span></button>
+        <button onclick="openCart()" class="relative active:scale-95 transition-transform text-on-surface hover:text-tertiary">
+          <span class="material-symbols-outlined font-light text-[24px]">shopping_bag</span>
+          <span id="cart-count" class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-tertiary text-on-tertiary text-[9px] hidden items-center justify-center font-manrope font-semibold">0</span>
+        </button>
+        <button class="active:scale-95 transition-transform hidden md:block text-on-surface-variant hover:text-on-surface"><span class="material-symbols-outlined font-light text-[24px]">person</span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="pt-[73px]">
+
+  <!-- CATEGORY HERO -->
+  <section class="relative w-full h-[50vh] min-h-[360px] overflow-hidden bg-ink-plum">
+    <div class="absolute inset-0">
+      <div class="w-full h-full bg-cover bg-center opacity-60" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn');"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-ink-plum/80 via-ink-plum/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 h-full flex flex-col justify-end px-5 md:px-margin-desktop pb-12 max-w-7xl mx-auto">
+      <p class="font-manrope text-[11px] uppercase tracking-[0.18em] text-primary-container mb-3 stagger-up">The Leather Edit</p>
+      <h1 class="font-fraunces text-4xl md:text-6xl text-on-primary leading-tight stagger-up">Bags</h1>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB + TOOLBAR -->
+  <div class="border-b border-outline-variant bg-surface-container-lowest sticky top-[73px] z-40">
+    <div class="max-w-container-max mx-auto px-5 md:px-margin-desktop py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div class="flex items-center gap-2 font-manrope text-xs text-on-surface-variant">
+        <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+        <span>›</span>
+        <span class="text-on-background">Bags</span>
+        <span class="ml-3 text-outline">— <span id="visible-count">6</span> pieces</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="flex gap-2 flex-wrap">
+          <button class="filter-pill active px-3 py-1 border border-outline-variant rounded-full font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant" data-tag="all" onclick="filterProducts('all')">All</button>
+          <button class="filter-pill px-3 py-1 border border-outline-variant rounded-full font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant" data-tag="tote" onclick="filterProducts('tote')">Totes</button>
+          <button class="filter-pill px-3 py-1 border border-outline-variant rounded-full font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant" data-tag="clutch" onclick="filterProducts('clutch')">Clutches</button>
+          <button class="filter-pill px-3 py-1 border border-outline-variant rounded-full font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant" data-tag="crossbody" onclick="filterProducts('crossbody')">Crossbody</button>
+        </div>
+        <select onchange="sortProducts(this.value)" class="font-manrope text-[11px] uppercase tracking-widest text-on-surface-variant bg-transparent border border-outline-variant px-3 py-1 focus:outline-none focus:border-primary cursor-pointer">
+          <option value="featured">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT GRID -->
+  <section class="py-16 px-5 md:px-margin-desktop bg-bone">
+    <div class="max-w-container-max mx-auto">
+      <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+
+        <div class="product-card-wrap" data-price="2400" data-cat="tote">
+          <div class="product-card cursor-pointer stagger-up">
+            <div class="overflow-hidden mb-4 relative bg-surface-container-high aspect-[3/4]">
+              <div class="product-img w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn');"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-3">
+                <button class="product-cta w-full h-10 bg-surface/90 backdrop-blur-sm text-on-surface font-manrope text-[10px] uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-colors duration-200" onclick="addToCart('La Calla Tote', 2400)">Add to Bag</button>
+              </div>
+              <div class="absolute top-3 left-3"><span class="px-2 py-1 bg-tertiary text-on-tertiary font-manrope text-[9px] uppercase tracking-widest">New</span></div>
+            </div>
+            <p class="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+            <p class="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">La Calla Tote</p>
+            <p class="font-manrope text-xs text-on-surface-variant mb-1">Ivory Calfskin</p>
+            <p class="font-manrope text-sm text-on-background font-medium">€ 2,400</p>
+          </div>
+        </div>
+
+        <div class="product-card-wrap" data-price="890" data-cat="clutch">
+          <div class="product-card cursor-pointer stagger-up">
+            <div class="overflow-hidden mb-4 relative bg-surface-container aspect-[3/4]">
+              <div class="product-img w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd');"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-3">
+                <button class="product-cta w-full h-10 bg-surface/90 backdrop-blur-sm text-on-surface font-manrope text-[10px] uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-colors duration-200" onclick="addToCart('Le Minuit Clutch', 890)">Add to Bag</button>
+              </div>
+            </div>
+            <p class="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+            <p class="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">Le Minuit Clutch</p>
+            <p class="font-manrope text-xs text-on-surface-variant mb-1">Black Satin</p>
+            <p class="font-manrope text-sm text-on-background font-medium">€ 890</p>
+          </div>
+        </div>
+
+        <div class="product-card-wrap" data-price="1650" data-cat="tote">
+          <div class="product-card cursor-pointer stagger-up">
+            <div class="overflow-hidden mb-4 relative bg-surface-container-high aspect-[3/4]">
+              <div class="product-img w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL');"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-3">
+                <button class="product-cta w-full h-10 bg-surface/90 backdrop-blur-sm text-on-surface font-manrope text-[10px] uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-colors duration-200" onclick="addToCart('Rosette Bucket Bag', 1650)">Add to Bag</button>
+              </div>
+            </div>
+            <p class="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+            <p class="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">Rosette Bucket Bag</p>
+            <p class="font-manrope text-xs text-on-surface-variant mb-1">Dusty Rose Leather</p>
+            <p class="font-manrope text-sm text-on-background font-medium">€ 1,650</p>
+          </div>
+        </div>
+
+        <div class="product-card-wrap" data-price="1200" data-cat="crossbody">
+          <div class="product-card cursor-pointer stagger-up">
+            <div class="overflow-hidden mb-4 relative bg-surface-container-highest aspect-[3/4]">
+              <div class="product-img w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn');"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-3">
+                <button class="product-cta w-full h-10 bg-surface/90 backdrop-blur-sm text-on-surface font-manrope text-[10px] uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-colors duration-200" onclick="addToCart('L\'Heure Bleue Crossbody', 1200)">Add to Bag</button>
+              </div>
+            </div>
+            <p class="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+            <p class="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">L'Heure Bleue Crossbody</p>
+            <p class="font-manrope text-xs text-on-surface-variant mb-1">Navy Calfskin</p>
+            <p class="font-manrope text-sm text-on-background font-medium">€ 1,200</p>
+          </div>
+        </div>
+
+        <div class="product-card-wrap" data-price="3100" data-cat="tote">
+          <div class="product-card cursor-pointer stagger-up">
+            <div class="overflow-hidden mb-4 relative bg-surface-container aspect-[3/4]">
+              <div class="product-img w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd');"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-3">
+                <button class="product-cta w-full h-10 bg-surface/90 backdrop-blur-sm text-on-surface font-manrope text-[10px] uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-colors duration-200" onclick="addToCart('Le Grand Cabas', 3100)">Add to Bag</button>
+              </div>
+              <div class="absolute top-3 left-3"><span class="px-2 py-1 bg-surface-container text-on-surface-variant font-manrope text-[9px] uppercase tracking-widest border border-outline-variant">Limited</span></div>
+            </div>
+            <p class="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+            <p class="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">Le Grand Cabas</p>
+            <p class="font-manrope text-xs text-on-surface-variant mb-1">Cognac Grain Leather</p>
+            <p class="font-manrope text-sm text-on-background font-medium">€ 3,100</p>
+          </div>
+        </div>
+
+        <div class="product-card-wrap" data-price="780" data-cat="clutch">
+          <div class="product-card cursor-pointer stagger-up">
+            <div class="overflow-hidden mb-4 relative bg-surface-container-high aspect-[3/4]">
+              <div class="product-img w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL');"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-3">
+                <button class="product-cta w-full h-10 bg-surface/90 backdrop-blur-sm text-on-surface font-manrope text-[10px] uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-colors duration-200" onclick="addToCart('Pétale Mini Bag', 780)">Add to Bag</button>
+              </div>
+              <div class="absolute top-3 left-3"><span class="px-2 py-1 bg-tertiary text-on-tertiary font-manrope text-[9px] uppercase tracking-widest">New</span></div>
+            </div>
+            <p class="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+            <p class="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">Pétale Mini Bag</p>
+            <p class="font-manrope text-xs text-on-surface-variant mb-1">Blush Suede</p>
+            <p class="font-manrope text-sm text-on-background font-medium">€ 780</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-tertiary border-t border-champagne">
+  <div class="max-w-container-max mx-auto px-5 md:px-margin-desktop pt-16 pb-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-16">
+      <div class="col-span-2 md:col-span-1">
+        <a href="index.html"><h2 class="font-fraunces text-2xl text-secondary-fixed mb-4 uppercase tracking-widest">MAISON ROSE</h2></a>
+        <p class="font-manrope text-sm text-secondary-fixed-dim/70 leading-relaxed max-w-xs">A Parisian atelier dedicated to the art of quiet luxury.</p>
+      </div>
+      <div>
+        <h4 class="font-manrope text-[10px] uppercase tracking-widest text-secondary-fixed font-semibold mb-6">Shop</h4>
+        <ul class="space-y-3">
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="bags.html">Bags</a></li>
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="jewelry.html">Jewelry</a></li>
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="accessories.html">Accessories</a></li>
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="index.html">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-manrope text-[10px] uppercase tracking-widest text-secondary-fixed font-semibold mb-6">Maison</h4>
+        <ul class="space-y-3">
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="#">Our Heritage</a></li>
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="#">The Atelier</a></li>
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="#">Journal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-manrope text-[10px] uppercase tracking-widest text-secondary-fixed font-semibold mb-6">Support</h4>
+        <ul class="space-y-3">
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="#">Client Services</a></li>
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="#">Shipping & Returns</a></li>
+          <li><a class="font-manrope text-sm text-secondary-fixed-dim/70 hover:text-secondary-fixed transition-all" href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-champagne/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-manrope text-xs text-secondary-fixed-dim/50">© 2025 MAISON ROSE. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="font-manrope text-xs text-secondary-fixed-dim/50 hover:text-secondary-fixed/80 transition-colors">Terms</a>
+        <a href="#" class="font-manrope text-xs text-secondary-fixed-dim/50 hover:text-secondary-fixed/80 transition-colors">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Cart state
+  let cartItems = [];
+
+  function addToCart(name, price) {
+    const existing = cartItems.find(i => i.name === name);
+    if (existing) { existing.qty++; } else { cartItems.push({ name, price, qty: 1 }); }
+    renderCart();
+    openCart();
+  }
+
+  function renderCart() {
+    const container = document.getElementById('cart-items-container');
+    const countEl = document.getElementById('cart-count');
+    if (cartItems.length === 0) {
+      container.innerHTML = '<p class="font-manrope text-sm text-on-surface-variant text-center mt-12">Your bag is empty.</p>';
+      countEl.classList.add('hidden'); countEl.classList.remove('flex');
+      document.getElementById('cart-subtotal').textContent = '€ 0';
+      return;
+    }
+    const total = cartItems.reduce((s, i) => s + i.price * i.qty, 0);
+    const totalCount = cartItems.reduce((s, i) => s + i.qty, 0);
+    container.innerHTML = cartItems.map((item, idx) => `
+      <div class="flex gap-4 mb-6">
+        <div class="flex-1">
+          <p class="font-manrope text-xs uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+          <p class="font-fraunces text-base text-on-background mb-2">${item.name}</p>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center border border-outline-variant">
+              <button class="px-3 py-1 text-on-surface-variant hover:text-on-surface" onclick="changeQty(${idx}, -1)">−</button>
+              <span class="px-3 py-1 font-manrope text-sm">${item.qty}</span>
+              <button class="px-3 py-1 text-on-surface-variant hover:text-on-surface" onclick="changeQty(${idx}, 1)">+</button>
+            </div>
+            <p class="font-manrope text-sm font-medium text-on-background">€ ${(item.price * item.qty).toLocaleString()}</p>
+          </div>
+        </div>
+      </div><div class="border-t border-outline-variant mb-4"></div>
+    `).join('');
+    document.getElementById('cart-subtotal').textContent = `€ ${total.toLocaleString()}`;
+    countEl.textContent = totalCount;
+    countEl.classList.remove('hidden'); countEl.classList.add('flex');
+  }
+
+  function changeQty(idx, delta) {
+    cartItems[idx].qty += delta;
+    if (cartItems[idx].qty <= 0) cartItems.splice(idx, 1);
+    renderCart();
+  }
+
+  // Sort & Filter
+  function sortProducts(val) {
+    const grid = document.getElementById('product-grid');
+    const cards = [...grid.querySelectorAll('.product-card-wrap')];
+    if (val === 'price-asc') cards.sort((a, b) => +a.dataset.price - +b.dataset.price);
+    else if (val === 'price-desc') cards.sort((a, b) => +b.dataset.price - +a.dataset.price);
+    cards.forEach(c => grid.appendChild(c));
+  }
+
+  function filterProducts(tag) {
+    const cards = document.querySelectorAll('.product-card-wrap');
+    let count = 0;
+    cards.forEach(c => {
+      const show = tag === 'all' || c.dataset.cat === tag;
+      c.style.display = show ? '' : 'none';
+      if (show) count++;
+    });
+    document.getElementById('visible-count').textContent = count;
+    document.querySelectorAll('.filter-pill').forEach(p => p.classList.toggle('active', p.dataset.tag === tag));
+  }
+
+  // Scroll animations
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.stagger-up').forEach(el => observer.observe(el));
+  setTimeout(() => document.querySelectorAll('.stagger-up').forEach(el => el.classList.add('in-view')), 80);
+
+  // Header scroll
+  const header = document.getElementById('main-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  }, { passive: true });
+
+  // Drawer / Cart / Search
+  function openDrawer() { document.getElementById('mobile-drawer').classList.add('open'); document.getElementById('drawer-overlay').classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeDrawer() { document.getElementById('mobile-drawer').classList.remove('open'); document.getElementById('drawer-overlay').classList.remove('open'); document.body.style.overflow=''; }
+  function openCart() { document.getElementById('cart-drawer').classList.add('open'); document.getElementById('cart-overlay').style.opacity='1'; document.getElementById('cart-overlay').style.pointerEvents='all'; document.body.style.overflow='hidden'; }
+  function closeCart() { document.getElementById('cart-drawer').classList.remove('open'); document.getElementById('cart-overlay').style.opacity='0'; document.getElementById('cart-overlay').style.pointerEvents='none'; document.body.style.overflow=''; }
+  function openSearch() { document.getElementById('search-overlay').classList.add('open'); document.body.style.overflow='hidden'; setTimeout(()=>document.getElementById('search-input').focus(),300); }
+  function closeSearch() { document.getElementById('search-overlay').classList.remove('open'); document.body.style.overflow=''; }
+  document.addEventListener('keydown', e => { if (e.key==='Escape'){closeSearch();closeCart();closeDrawer();} });
+</script>
+</body>
+</html>

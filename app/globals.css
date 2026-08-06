@@ -1,0 +1,131 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+/* ── Body defaults ── */
+body {
+  background-color: #fff8f4;
+  color: #1f1b17;
+  overflow-x: hidden;
+}
+
+/* ── Stagger-up scroll animation ── */
+.stagger-up {
+  opacity: 1;
+  transform: translateY(30px);
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.stagger-up.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Parallax fixed background ── */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ── Ken Burns hero animation ── */
+.ken-burns {
+  animation: kenBurns 20s ease infinite alternate;
+}
+@keyframes kenBurns {
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* ── Scrollbar hide ── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Brand colour helpers ── */
+.bg-ember-rose  { background-color: #8a4c5a; }
+.text-ember-rose { color: #8a4c5a; }
+.bg-ink-plum    { background-color: #241019; }
+.text-ink-plum  { color: #241019; }
+.border-champagne { border-color: #C9A66B; }
+.text-champagne   { color: #C9A66B; }
+.bg-blush-quartz  { background-color: #efdee0; }
+.bg-bone          { background-color: #fff8f4; }
+
+/* ── Glint sweep effect ── */
+.glint-container { position: relative; overflow: hidden; }
+.glint-container::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -150%;
+  width: 50%; height: 100%;
+  background: linear-gradient(to right,
+    rgba(255,255,255,0)   0%,
+    rgba(255,255,255,0.3) 50%,
+    rgba(255,255,255,0)   100%);
+  transform: skewX(-25deg);
+  animation: glint 6s infinite;
+}
+@keyframes glint {
+  0%   { left: -150%; }
+  20%  { left: 200%; }
+  100% { left: 200%; }
+}
+
+/* ── Mobile drawer ── */
+.mobile-drawer {
+  transform: translateX(-100%);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.mobile-drawer.open { transform: translateX(0); }
+.drawer-overlay { opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+.drawer-overlay.open { opacity: 1; pointer-events: all; }
+
+/* ── Cart drawer ── */
+.cart-drawer {
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.cart-drawer.open { transform: translateX(0); }
+
+/* ── Search overlay ── */
+.search-overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.search-overlay.open { opacity: 1; pointer-events: all; }
+
+/* ── Product card hover ── */
+.product-card { transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.product-card:hover { transform: translateY(-6px); }
+.product-card:hover .product-img { transform: scale(1.04); }
+.product-img { transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.product-card:hover .product-cta { opacity: 1; transform: translateY(0); }
+.product-cta {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.3s ease;
+}
+
+/* ── Gold rule ── */
+.quote-rule { width: 48px; height: 1px; background: #C9A66B; }
+
+/* ── Scroll bounce indicator ── */
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(6px); }
+}
+.scroll-indicator { animation: scrollBounce 2s ease-in-out infinite; }
+
+/* ── Header scroll state ── */
+.main-header {
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease, box-shadow 0.4s ease;
+}
+.main-header.scrolled {
+  background-color: rgba(255,255,255,0.92) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(36,16,25,0.06);
+}
+
+/* ── Newsletter input ── */
+.newsletter-input:focus { outline: none; border-bottom-color: #d68c9c; }
