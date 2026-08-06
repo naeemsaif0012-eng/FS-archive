@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1,
+    "name": "La Calla Tote",
+    "subtitle": "Ivory Calfskin",
+    "description": "",
+    "price": 2400,
+    "main_category": "bags",
+    "category": "tote",
+    "status": "available",
+    "badge": "New",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 2,
+    "name": "Le Minuit Clutch",
+    "subtitle": "Black Satin",
+    "description": "",
+    "price": 890,
+    "main_category": "bags",
+    "category": "clutch",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd"
+    ],
+    "bg_class": "bg-surface-container",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 3,
+    "name": "Rosette Bucket Bag",
+    "subtitle": "Dusty Rose Leather",
+    "description": "",
+    "price": 1650,
+    "main_category": "bags",
+    "category": "tote",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 4,
+    "name": "L'Heure Bleue Crossbody",
+    "subtitle": "Navy Calfskin",
+    "description": "",
+    "price": 1200,
+    "main_category": "bags",
+    "category": "crossbody",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn"
+    ],
+    "bg_class": "bg-surface-container-highest",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 5,
+    "name": "Le Grand Cabas",
+    "subtitle": "Cognac Grain Leather",
+    "description": "",
+    "price": 3100,
+    "main_category": "bags",
+    "category": "tote",
+    "status": "available",
+    "badge": "Limited",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd"
+    ],
+    "bg_class": "bg-surface-container",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 6,
+    "name": "Pétale Mini Bag",
+    "subtitle": "Blush Suede",
+    "description": "",
+    "price": 780,
+    "main_category": "bags",
+    "category": "clutch",
+    "status": "available",
+    "badge": "New",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 7,
+    "name": "Fil d'Or Chain",
+    "subtitle": "18k Gold · 45cm",
+    "description": "",
+    "price": 890,
+    "main_category": "jewelry",
+    "category": "necklace",
+    "status": "available",
+    "badge": "New",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL"
+    ],
+    "bg_class": "bg-surface-container",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 8,
+    "name": "Rosette Stud Earrings",
+    "subtitle": "18k Gold & Diamond",
+    "description": "",
+    "price": 1200,
+    "main_category": "jewelry",
+    "category": "earring",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 9,
+    "name": "Heritage Cuff",
+    "subtitle": "Polished 18k Gold",
+    "description": "",
+    "price": 2100,
+    "main_category": "jewelry",
+    "category": "ring",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd"
+    ],
+    "bg_class": "bg-surface-container-highest",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 10,
+    "name": "Lumière Pendant",
+    "subtitle": "18k Gold & South Sea Pearl",
+    "description": "",
+    "price": 680,
+    "main_category": "jewelry",
+    "category": "necklace",
+    "status": "available",
+    "badge": "New",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 11,
+    "name": "Champagne Bangle Set",
+    "subtitle": "Rose Gold · Set of 3",
+    "description": "",
+    "price": 950,
+    "main_category": "jewelry",
+    "category": "ring",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd"
+    ],
+    "bg_class": "bg-surface-container",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 12,
+    "name": "Éclat Ring",
+    "subtitle": "Diamond Pavé · 18k Gold",
+    "description": "",
+    "price": 3400,
+    "main_category": "jewelry",
+    "category": "ring",
+    "status": "available",
+    "badge": "Limited",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 13,
+    "name": "Heritage Silk Scarf",
+    "subtitle": "Ivory & Gold Print · 90×90cm",
+    "description": "",
+    "price": 620,
+    "main_category": "accessories",
+    "category": "scarf",
+    "status": "available",
+    "badge": "New",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 14,
+    "name": "Tourbillon No. 1",
+    "subtitle": "Rose Gold · Mechanical",
+    "description": "",
+    "price": 18500,
+    "main_category": "accessories",
+    "category": "watch",
+    "status": "available",
+    "badge": "Limited",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuANMqbxmRClPeN4wqgJNK9lX_xh8qwucq78m6OK_9UjCrS0uVO6ZxxXLZ-v6mbv267Z3D_mT5hVU0eCwluNqnU7FlyFvsVE986l_Cewo03tbFtMbIfElwrIDNiDFojHXaRd_JgJHrIuF3Tv2xNqbbQnD64NIGkNk06hS4AOBwm3-KZ6ukm9iTlaWvWCAXNx3__Gbq_4XE5dNu2rNyCQDIHnM2McaKJuYlUU7Dr1P-PcZ7m6sGyeO6tQ"
+    ],
+    "bg_class": "bg-surface-container",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 15,
+    "name": "Soie d'Or Scarf",
+    "subtitle": "Dusty Rose · 70×70cm",
+    "description": "",
+    "price": 580,
+    "main_category": "accessories",
+    "category": "scarf",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn"
+    ],
+    "bg_class": "bg-surface-container-highest",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 16,
+    "name": "Atelier Watch",
+    "subtitle": "Steel & Rose Gold · Automatic",
+    "description": "",
+    "price": 4200,
+    "main_category": "accessories",
+    "category": "watch",
+    "status": "available",
+    "badge": "New",
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuANMqbxmRClPeN4wqgJNK9lX_xh8qwucq78m6OK_9UjCrS0uVO6ZxxXLZ-v6mbv267Z3D_mT5hVU0eCwluNqnU7FlyFvsVE986l_Cewo03tbFtMbIfElwrIDNiDFojHXaRd_JgJHrIuF3Tv2xNqbbQnD64NIGkNk06hS4AOBwm3-KZ6ukm9iTlaWvWCAXNx3__Gbq_4XE5dNu2rNyCQDIHnM2McaKJuYlUU7Dr1P-PcZ7m6sGyeO6tQ"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 17,
+    "name": "Velours Headband",
+    "subtitle": "Bordeaux Velvet",
+    "description": "",
+    "price": 220,
+    "main_category": "accessories",
+    "category": "other",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL"
+    ],
+    "bg_class": "bg-surface-container",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 18,
+    "name": "L'Heure Watch",
+    "subtitle": "Minimalist White Dial · Quartz",
+    "description": "",
+    "price": 2800,
+    "main_category": "accessories",
+    "category": "watch",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuANMqbxmRClPeN4wqgJNK9lX_xh8qwucq78m6OK_9UjCrS0uVO6ZxxXLZ-v6mbv267Z3D_mT5hVU0eCwluNqnU7FlyFvsVE986l_Cewo03tbFtMbIfElwrIDNiDFojHXaRd_JgJHrIuF3Tv2xNqbbQnD64NIGkNk06hS4AOBwm3-KZ6ukm9iTlaWvWCAXNx3__Gbq_4XE5dNu2rNyCQDIHnM2McaKJuYlUU7Dr1P-PcZ7m6sGyeO6tQ"
+    ],
+    "bg_class": "bg-surface-container-high",
+    "created_at": "2026-08-06T08:02:17.898Z",
+    "updated_at": "2026-08-06T08:02:17.898Z"
+  },
+  {
+    "id": 19,
+    "name": "trial",
+    "subtitle": "Kuch tou hai",
+    "description": "blahh blahhh",
+    "price": 1000,
+    "main_category": "bags",
+    "category": "clutch",
+    "status": "available",
+    "badge": null,
+    "quantity": 1,
+    "images": [
+      "/uploads/1786003660847-fgjtumwoxqh.PNG"
+    ],
+    "bg_class": "bg-surface-container",
+    "created_at": "2026-08-06T08:08:03.512Z",
+    "updated_at": "2026-08-06T08:08:03.512Z"
+  }
+]

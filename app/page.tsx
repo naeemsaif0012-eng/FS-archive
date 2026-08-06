@@ -1,23 +1,27 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useCart } from '@/context/CartContext'
+import type { DbProduct } from '@/lib/types'
 
 const HERO_IMAGE = 'https://lh3.googleusercontent.com/aida-public/AB6AXuANMqbxmRClPeN4wqgJNK9lX_xh8qwucq78m6OK_9UjCrS0uVO6ZxxXLZ-v6mbv267Z3D_mT5hVU0eCwluNqnU7FlyFvsVE986l_Cewo03tbFtMbIfElwrIDNiDFojHXaRd_JgJHrIuF3Tv2xNqbbQnD64NIGkNk06hS4AOBwm3-KZ6ukm9iTlaWvWCAXNx3__Gbq_4XE5dNu2rNyCQDIHnM2McaKJuYlUU7Dr1P-PcZ7m6sGyeO6tQ'
 const IMG_BAGS = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvJ4D_HSb0qDFIU-ANm55iElbMp2HBTv2Cx5QlulNHUORFHJZxHFJKsCeS8EOjyHxsHrY8mNUXNicw7WG_5Um6bLg8fVKnz3LKJAV4OOjye13wlcFDrwcur8WGyJg_C2jOJIckgU9DWJIu-M37eNKpNLf7osS55oRkiU-2Bz5l9AyiK3P8vw3P4At1d4TRs6oMioqVvpbCb3HjnLsNj0ykk5RrAoxs2yh0lAUmjBt4-PYtLjTqb4Fn'
 const IMG_JEWELRY = 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0Bikepsu2EEQsFjPBGxYB0yqYAzCYhozNmzkAXhgcK87_py-tnVLO-uUB3LgaQ3SOPXMCP5VcotntBKh-NZWTlYe2HkQoGLMjPUzurQNwyZM3G6iG_EDDJLQgCgkGq8bbZEf3378Ko3ZWxOSiIO5R09vways9cBdmaU8jW8Ce088RHTzVpeIzVt5h14icSwApPkBj6CiFFodF27-TJLJo7nOdvAKHVAMtK2TZemsboMvc83tEvLVL'
 const IMG_SCARVES = 'https://lh3.googleusercontent.com/aida-public/AB6AXuCfxvE5bZlw0oLwwQlTfTWvTAwJ3FC1gLfQEesaLaxDgiJouHsHqM4XsN6pGScxLYqm-0fN7rLAWrOAU1YFHcp7H-nM1YXuF9KrIw4xQ4rhzbnpZC7BdKU6JMcow4BIQVn9UXGxdXbV6e2JeVV2iAslJGDDkBDxpe2pKNOY04MCl1PopUTG4CEHM82_L6foEN5nsjl1cOmrGtcW5yrLGYN0wDEbsehiLgh-0ZTGRU--hrY_RmxYOHLd'
 
-const featuredProducts = [
-  { name: 'La Calla Tote', price: 2400, badge: 'New', image: IMG_BAGS, bg: 'bg-surface-container-high' },
-  { name: "Fil d'Or Chain", price: 890, image: IMG_JEWELRY, bg: 'bg-surface-container' },
-  { name: 'Heritage Silk Scarf', price: 620, image: IMG_SCARVES, bg: 'bg-surface-container-highest' },
-  { name: 'Tourbillon No. 1', price: 18500, badge: 'Limited', image: HERO_IMAGE, bg: 'bg-surface-container-high' },
+type FeaturedCard = Pick<DbProduct, 'id' | 'name' | 'price' | 'badge' | 'images'> & { bg_class: string }
+
+const DEFAULT_FEATURED_PRODUCTS: FeaturedCard[] = [
+  { id: 1, name: 'La Calla Tote', price: 2400, badge: 'New', images: [IMG_BAGS], bg_class: 'bg-surface-container-high' },
+  { id: 7, name: "Fil d'Or Chain", price: 890, badge: 'New', images: [IMG_JEWELRY], bg_class: 'bg-surface-container' },
+  { id: 13, name: 'Heritage Silk Scarf', price: 620, badge: 'New', images: [IMG_SCARVES], bg_class: 'bg-surface-container-highest' },
+  { id: 18, name: 'Tourbillon No. 1', price: 18500, badge: 'Limited', images: [HERO_IMAGE], bg_class: 'bg-surface-container-high' },
 ]
 
 export default function HomePage() {
   const { addToCart } = useCart()
+  const [featuredProducts, setFeaturedProducts] = useState(DEFAULT_FEATURED_PRODUCTS)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,6 +30,13 @@ export default function HomePage() {
     )
     document.querySelectorAll('.stagger-up').forEach((el) => observer.observe(el))
     setTimeout(() => document.querySelectorAll('.stagger-up').forEach((el) => el.classList.add('in-view')), 80)
+    fetch('/api/featured-products')
+      .then(res => res.ok ? res.json() : null)
+      .then(data => {
+        if (data?.items?.length === 4) {
+          setFeaturedProducts(data.items)
+        }
+      })
     return () => observer.disconnect()
   }, [])
 
@@ -78,12 +89,12 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {featuredProducts.map((p, i) => (
               <div key={p.name} className="product-card group cursor-pointer stagger-up" style={{ transitionDelay: `${i * 100}ms` }}>
-                <div className={`overflow-hidden mb-4 relative ${p.bg} aspect-[3/4]`}>
-                  <div className="product-img w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('${p.image}')` }} />
+                <div className={`overflow-hidden mb-4 relative ${p.bg_class} aspect-[3/4]`}>
+                  <div className="product-img w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('${p.images?.[0] ?? ''}')` }} />
                   <div className="absolute bottom-0 left-0 right-0 p-3">
                     <button
                       className="product-cta w-full h-10 bg-surface/90 backdrop-blur-sm text-on-surface font-manrope text-[10px] uppercase tracking-widest hover:bg-tertiary hover:text-on-tertiary transition-colors duration-200"
-                      onClick={() => addToCart(p.name, p.price)}
+                      onClick={() => addToCart(p.name, Number(p.price))}
                     >
                       Add to Bag
                     </button>
@@ -100,7 +111,7 @@ export default function HomePage() {
                 </div>
                 <p className="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
                 <p className="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">{p.name}</p>
-                <p className="font-manrope text-sm text-on-surface-variant">€ {p.price.toLocaleString()}</p>
+                <p className="font-manrope text-sm text-on-surface-variant">€ {Number(p.price).toLocaleString()}</p>
               </div>
             ))}
           </div>

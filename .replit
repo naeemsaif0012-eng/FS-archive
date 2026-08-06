@@ -2,6 +2,15 @@ modules = ["nodejs-24"]
 [nix]
 channel = "stable-25_05"
 
+[userenv]
+
+[userenv.shared]
+CORS_ORIGIN = "https://a213d969-4e0e-4740-a889-128f15104431-00-2qi75o1i54agq.sisko.replit.dev,http://localhost:5000"
+NODE_ENV = "development"
+SUPABASE_STORAGE_BUCKET = "product-images"
+SUPABASE_URL = "https://cysnnqvwifzusrwkqdbo.supabase.co"
+VITE_WHATSAPP_NUMBER = "923299615669"
+
 [workflows]
 runButton = "Project"
 
@@ -12,10 +21,10 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Start application"
+args = "Maison Rose"
 
 [[workflows.workflow]]
-name = "Start application"
+name = "Maison Rose"
 author = "agent"
 
 [[workflows.workflow.tasks]]
@@ -23,8 +32,9 @@ task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
 
-[workflows.workflow.metadata]
-outputType = "webview"
+[[ports]]
+localPort = 3001
+externalPort = 3001
 
 [[ports]]
 localPort = 5000
