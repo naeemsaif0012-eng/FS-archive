@@ -57,5 +57,11 @@
     "tsx": "^4.20.4",
     "typescript": "^5.9.2",
     "vite": "^6.3.5"
+  },
+  "allowScripts": {
+    "esbuild@0.18.20": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true
   }
 }

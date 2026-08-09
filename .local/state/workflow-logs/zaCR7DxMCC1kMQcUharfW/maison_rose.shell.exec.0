@@ -1,0 +1,24 @@
+
+> maison-rose@1.0.0 dev
+> concurrently -k "npm:dev:api" "npm:dev:web"
+
+[0m[dev:api][0m 
+[0m[dev:api][0m > maison-rose@1.0.0 dev:api
+[0m[dev:api][0m > tsx watch server/index.ts
+[0m[dev:api][0m 
+[0m[dev:web][0m 
+[0m[dev:web][0m > maison-rose@1.0.0 dev:web
+[0m[dev:web][0m > vite --host 0.0.0.0 --port 5000
+[0m[dev:web][0m 
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m265[22m[2m[0m ms[22m
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+[0m[dev:web][0m   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.24.0.2:[1m5000[22m/[39m
+[0m[dev:api][0m Maison Rose API listening on :3001
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 1139.256 ms - 2559[0m
+[0m[dev:web][0m [0mnpm run dev:web exited with code SIGTERM[0m
+[0m-->[0m [0mSending SIGTERM to other processes..[0m
+[0m[dev:api][0m [90m12:30:10 PM[39m [96m[tsx][39m [33mPrevious process hasn't exited yet. Force killing...[39m
+[0m[dev:api][0m [0mnpm run dev:api exited with code SIGTERM[0m
+⠙[1G[0K

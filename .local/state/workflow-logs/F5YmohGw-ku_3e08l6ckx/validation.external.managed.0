@@ -1,0 +1,28 @@
+VERDICT: REJECTED
+
+The setup is not ready to complete: the repository fails its declared `npm run typecheck` with six TypeScript errors in the new Vite/Wouter application, including incompatible route component props in `src/App.tsx`; this prevents a valid checked build of the new root project.
+
+The root also contains a 72 MB changed `zipFile.zip` archive of the project (including a nested `.git` directory and `.env` file), while the prior source archive and screenshot were replaced/deleted. This is not a safe or appropriate project relocation and risks shipping private environment configuration as a tracked artifact. The committed `data/admin-settings.json` bcrypt hash is additionally flagged by SAST; it is not evidence that the admin password was seeded to Supabase and should not be used as a credential store.
+
+Security: serious violations observed. `.replit` hardcodes `JWT_SECRET` rather than using a Replit Secret, and the tracked archive contains `.env`; remove the archive and rotate any credentials that may have been included. The Supabase service-role key must be a Replit Secret only.
+
+Next actions:
+1. Remove the archive/nested project and all exported credential-bearing files; rotate exposed JWT/Supabase credentials and configure them exclusively through Secrets.
+2. Fix the Wouter route typings and rerun `npm run typecheck` and `npm run build` successfully.
+3. Apply the Supabase migration and seed through the documented command, verifying the admin password hash exists in Supabase rather than committing it in `data/`.
+
+VERDICT: REJECTED
+VERDICT: REJECTED
+
+The setup is not ready to complete: the repository fails its declared `npm run typecheck` with six TypeScript errors in the new Vite/Wouter application, including incompatible route component props in `src/App.tsx`; this prevents a valid checked build of the new root project.
+
+The root also contains a 72 MB changed `zipFile.zip` archive of the project (including a nested `.git` directory and `.env` file), while the prior source archive and screenshot were replaced/deleted. This is not a safe or appropriate project relocation and risks shipping private environment configuration as a tracked artifact. The committed `data/admin-settings.json` bcrypt hash is additionally flagged by SAST; it is not evidence that the admin password was seeded to Supabase and should not be used as a credential store.
+
+Security: serious violations observed. `.replit` hardcodes `JWT_SECRET` rather than using a Replit Secret, and the tracked archive contains `.env`; remove the archive and rotate any credentials that may have been included. The Supabase service-role key must be a Replit Secret only.
+
+Next actions:
+1. Remove the archive/nested project and all exported credential-bearing files; rotate exposed JWT/Supabase credentials and configure them exclusively through Secrets.
+2. Fix the Wouter route typings and rerun `npm run typecheck` and `npm run build` successfully.
+3. Apply the Supabase migration and seed through the documented command, verifying the admin password hash exists in Supabase rather than committing it in `data/`.
+
+VERDICT: REJECTED

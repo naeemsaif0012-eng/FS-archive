@@ -1,10 +1,18 @@
-import type { ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
 import { Route, Switch, useLocation } from 'wouter'
 import { CartProvider } from './context/CartContext'
 import { CartDrawer, Footer, MobileDrawer, Navbar, SearchOverlay } from './components/PublicChrome'
 import { HomePage } from './pages/HomePage'
 import { CatalogPage } from './pages/CatalogPage'
+import { ProductDetailPage } from './pages/ProductDetailPage'
+import { ContactPage } from './pages/ContactPage'
 import { AdminDashboard, AdminLoginPage, ProductEditor } from './pages/AdminPages'
+
+function ScrollToTop() {
+  const [path] = useLocation()
+  useEffect(() => { window.scrollTo(0, 0) }, [path])
+  return null
+}
 
 function PublicLayout({ children }: { children: ReactNode }) {
   return (
@@ -42,10 +50,12 @@ function Routes() {
         <Route path="/bags">{() => <CatalogPage category="bags" eyebrow="The Leather Edit" />}</Route>
         <Route path="/jewelry">{() => <CatalogPage category="jewelry" eyebrow="Fine Jewelry" />}</Route>
         <Route path="/accessories">{() => <CatalogPage category="accessories" eyebrow="Accessories" />}</Route>
+        <Route path="/product/:id">{() => <ProductDetailPage />}</Route>
+        <Route path="/contact">{() => <ContactPage />}</Route>
         <Route>{() => <HomePage />}</Route>
       </Switch>
     </PublicLayout>
   )
 }
 
-export default function App() { return <Routes /> }
+export default function App() { return <><ScrollToTop /><Routes /></> }

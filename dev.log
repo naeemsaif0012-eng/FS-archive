@@ -1,0 +1,1114 @@
+
+> maison-rose@1.0.0 dev
+> concurrently -k "npm:dev:api" "npm:dev:web"
+
+[dev:api] 
+[dev:api] > maison-rose@1.0.0 dev:api
+[dev:api] > tsx watch server/index.ts
+[dev:api] 
+[dev:web] 
+[dev:web] > maison-rose@1.0.0 dev:web
+[dev:web] > vite --host 0.0.0.0 --port 5000
+[dev:web] 
+[dev:web] 
+[dev:web]   [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m886[22m[2m[0m ms[22m
+[dev:web] 
+[dev:web]   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+[dev:web]   [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.100.204:[1m5000[22m/[39m
+[dev:api] Maison Rose API listening on :3001
+[dev:api] [0mGET /api/products [32m200[0m 1976.636 ms - 11843[0m
+[dev:api] [0mGET /api/products [32m200[0m 577.790 ms - 11843[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 2295.974 ms - 2559[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 809.666 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 770.024 ms - 4197[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1109.402 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.774 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.628 ms - 24[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1669.026 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1233.145 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1499.214 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1190.055 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1082.124 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1571.434 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1166.831 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [33m401[0m 1196.053 ms - 28[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 949.837 ms - 187[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.690 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.440 ms - 24[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 1466.468 ms - 187[0m
+[dev:api] [0mGET /api/auth/me [32m200[0m 4.337 ms - 19[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.607 ms - -[0m
+[dev:api] [0mGET /api/products [32m200[0m 513.295 ms - 11843[0m
+[dev:api] [0mGET /api/categories [32m200[0m 914.863 ms - 1010[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1309.607 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 648.059 ms - -[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 2885.875 ms - 146[0m
+[dev:api] [0mPOST /api/products [31m500[0m 573.496 ms - 76[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 1515.356 ms - 187[0m
+[dev:api] [0mPOST /api/products [31m500[0m 325.601 ms - 76[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 1452.736 ms - 187[0m
+[dev:api] [0mPOST /api/products [31m500[0m 498.353 ms - 76[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 1169.952 ms - 187[0m
+[dev:api] [0mPOST /api/products [32m201[0m 437.671 ms - 308[0m
+[dev:api] [0mDELETE /api/products/21 [32m200[0m 445.024 ms - 11[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.919 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.269 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 589.762 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 598.116 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 884.953 ms - -[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 2313.664 ms - 146[0m
+[dev:api] [0mPOST /api/products [32m201[0m 590.265 ms - 461[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.111 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.447 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 410.043 ms - -[0m
+[dev:api] [0mGET /api/products [32m200[0m 415.586 ms - 12305[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 777.775 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 891.531 ms - -[0m
+[dev:api] [0mPUT /api/products/22 [32m200[0m 1454.578 ms - 460[0m
+[dev:api] [0mGET /api/products [32m200[0m 364.912 ms - 12304[0m
+[dev:api] [0mGET /api/categories [36m304[0m 465.310 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1034.979 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 2453.764 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.885 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.788 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 825.306 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 1038.313 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1372.007 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1066.036 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 10866.901 ms - -[0m
+[dev:web] [2m10:39:01 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mPOST /api/upload [32m201[0m 1683.318 ms - 146[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1477.306 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.880 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 368.600 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 375.172 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.444 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 713.380 ms - -[0m
+[dev:api] [0mGET /api/products/22 [32m200[0m 428.377 ms - 460[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.277 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 360.565 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.125 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 403.866 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 695.197 ms - -[0m
+[dev:api] [0mDELETE /api/products/22 [32m200[0m 470.479 ms - 11[0m
+[dev:api] [0mGET /api/products [32m200[0m 416.272 ms - 11843[0m
+[dev:api] [0mGET /api/categories [36m304[0m 403.680 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 765.517 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.400 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.587 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 327.519 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 333.252 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 674.192 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [32m200[0m 422.823 ms - 3800[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 400.420 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [32m200[0m 466.520 ms - 3848[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 390.163 ms - -[0m
+[dev:web] [2m10:47:20 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[dev:web] [2m10:47:21 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[dev:web] [2m10:47:22 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[dev:web] [2m10:47:22 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[dev:web] [2m10:47:23 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[dev:web] [2m10:47:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 688.723 ms - -[0m
+[dev:web] [2m10:47:43 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:47:43 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:47:44 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:47:44 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:47:46 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:47:47 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:00 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:01 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:02 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:19 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:20 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:20 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 431.826 ms - -[0m
+[dev:web] [2m10:48:27 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:48:27 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 353.291 ms - -[0m
+[dev:web] [2m10:48:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 322.877 ms - -[0m
+[dev:web] [2m10:48:28 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 317.477 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 308.527 ms - -[0m
+[dev:web] [2m10:48:29 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 305.299 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 317.151 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 745.887 ms - -[0m
+[dev:web] [2m10:48:51 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:49:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:49:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 381.652 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 396.217 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 761.375 ms - -[0m
+[dev:web] [2m10:49:07 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 335.927 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 344.657 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 724.249 ms - -[0m
+[dev:web] [2m10:49:08 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 315.885 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 321.368 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 595.535 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 16779.476 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 16783.511 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 17152.638 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 607.571 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 1011.141 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 1036.040 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1888.428 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1302.063 ms - -[0m
+[dev:web] [2m10:56:22 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:56:25 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:web] [2m10:56:33 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ProductCard.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 851.023 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 876.173 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1219.988 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 620.323 ms - -[0m
+[dev:web] [2m10:57:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ProductCard.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/1 [32m200[0m 745.182 ms - 619[0m
+[dev:api] [0mGET /api/products/99999 [33m404[0m 334.621 ms - 21[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1017.650 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1790.731 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 498.901 ms - -[0m
+[dev:api] [0mGET /api/products/3 [32m200[0m 336.766 ms - 627[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 563.545 ms - -[0m
+[dev:api] [0mGET /api/products/3 [36m304[0m 464.851 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 335.336 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 373.540 ms - 459[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 8825.546 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.698 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.962 ms - -[0m
+[dev:api] [0mGET /api/products [31m500[0m 28164.152 ms - 35[0m
+[dev:api] [0mGET /api/categories [31m500[0m 28180.023 ms - 35[0m
+[dev:api] [0mGET /api/featured-products [31m500[0m 28180.127 ms - 35[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.576 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.628 ms - -[0m
+[dev:api] [0mGET /api/products [31m500[0m 7028.175 ms - 35[0m
+[dev:api] [0mGET /api/categories [31m500[0m 7034.854 ms - 35[0m
+[dev:api] [0mGET /api/featured-products [31m500[0m 7035.548 ms - 35[0m
+[dev:api] [0mGET /api/products [31m500[0m 12080.632 ms - 35[0m
+[dev:api] [0mGET /api/categories [31m500[0m 12081.977 ms - 35[0m
+[dev:api] [0mGET /api/featured-products [31m500[0m 12082.425 ms - 35[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.505 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.476 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.459 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.005 ms - -[0m
+[dev:api] [0mGET /api/products [31m500[0m 7036.791 ms - 35[0m
+[dev:api] [0mGET /api/categories [31m500[0m 7062.983 ms - 35[0m
+[dev:api] [0mGET /api/featured-products [31m500[0m 7058.891 ms - 35[0m
+[dev:api] [0mGET /api/products [31m500[0m 7037.972 ms - 35[0m
+[dev:api] [0mGET /api/categories [31m500[0m 7042.755 ms - 35[0m
+[dev:api] [0mGET /api/featured-products [31m500[0m 7050.182 ms - 35[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.458 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.391 ms - -[0m
+[dev:api] [0mGET /api/categories [32m200[0m 778.364 ms - 1010[0m
+[dev:api] [0mGET /api/products [32m200[0m 793.179 ms - 11843[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1193.597 ms - 2559[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.717 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.466 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.954 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 355.163 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 362.858 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.449 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 699.272 ms - -[0m
+[dev:api] [0mPUT /api/featured-products [32m200[0m 1089.801 ms - 26[0m
+[dev:api] [0mGET /api/products [36m304[0m 411.077 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 393.201 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 690.375 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1676.297 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 829.674 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 944.186 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 944.086 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 621.837 ms - 2573[0m
+[dev:api] [0mGET /api/products [36m304[0m 555.911 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 845.203 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 873.332 ms - 2573[0m
+[dev:api] [0mGET /api/categories [36m304[0m 1016.781 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 603.695 ms - -[0m
+[dev:web] [2m11:10:37 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m11:10:40 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1991.731 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 2088.864 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 934.990 ms - 2573[0m
+[dev:web] [2m11:12:57 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1015.218 ms - 2573[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 561.949 ms - 4197[0m
+[dev:api] [0mGET /api/products/5 [32m200[0m 470.239 ms - 625[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 405.808 ms - 4197[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 313.657 ms - 459[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 1572.688 ms - 459[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 919.798 ms - 459[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.945 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.701 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 540.548 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 972.931 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 1013.391 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.562 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.325 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.622 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 411.218 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.437 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 400.438 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 861.119 ms - -[0m
+[dev:api] [0mPUT /api/products/19 [32m200[0m 529.754 ms - 458[0m
+[dev:api] [0mGET /api/products [32m200[0m 324.759 ms - 11842[0m
+[dev:api] [0mGET /api/categories [36m304[0m 389.011 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 788.507 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 895.485 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1051.852 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 831.169 ms - -[0m
+[dev:web] [2m2:03:13 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:03:15 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1200.340 ms - -[0m
+[dev:web] [2m2:03:21 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:03:25 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:03:27 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:03:30 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:03:32 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:03:38 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:03:41 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:06 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:11 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:21 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 886.964 ms - -[0m
+[dev:web] [2m2:04:24 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:28 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:32 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:34 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:46 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:50 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:04:57 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:05:04 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1024.582 ms - -[0m
+[dev:web] [2m2:08:25 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 928.713 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 956.946 ms - -[0m
+[dev:web] [2m2:10:38 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1138.649 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 960.030 ms - -[0m
+[dev:web] [2m2:11:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:11:41 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1099.193 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 889.818 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 903.608 ms - 2573[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 34131.168 ms - 458[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 34131.521 ms - 458[0m
+[dev:api] [0mGET /api/products [36m304[0m 34143.555 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 34457.802 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 34755.495 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 34763.337 ms - 2573[0m
+[dev:api] [0mGET /api/categories [36m304[0m 603.527 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 623.124 ms - 458[0m
+[dev:api] [0mGET /api/products [36m304[0m 615.856 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 928.407 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 955.828 ms - 2573[0m
+[dev:web] [2m2:21:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:21:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ProductCard.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:21:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:21:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\pages\ProductDetailPage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:21:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 923.428 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 950.774 ms - 458[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 863.449 ms - 458[0m
+[dev:api] [0mGET /api/products [36m304[0m 934.313 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1257.313 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1101.675 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 700.239 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 719.057 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [32m200[0m 434.178 ms - 3800[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 1617.313 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 567.516 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 579.423 ms - 458[0m
+[dev:api] [0mGET /api/categories [36m304[0m 572.707 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 601.716 ms - 458[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 851.141 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 860.846 ms - 2573[0m
+[dev:web] [2m2:28:45 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ProductCard.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:28:49 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [32m200[0m 939.227 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 994.813 ms - 2573[0m
+[dev:web] [2m2:28:53 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:28:57 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\pages\ProductDetailPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/19 [32m200[0m 457.563 ms - 458[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 420.775 ms - 458[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 773.287 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 672.724 ms - 2573[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 433.895 ms - 4196[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 422.586 ms - 458[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 413.753 ms - 4196[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 412.041 ms - -[0m
+[dev:api] [0mGET /api/products/1 [32m200[0m 440.144 ms - 619[0m
+[dev:api] [0mGET /api/products [36m304[0m 22470.461 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 23057.186 ms - 458[0m
+[dev:api] [0mGET /api/categories [36m304[0m 23086.544 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 24176.422 ms - 458[0m
+[dev:api] [0mGET /api/products/1 [36m304[0m 24174.559 ms - -[0m
+[dev:web] [2m2:32:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/19 [32m200[0m 377.316 ms - 458[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 640.689 ms - 458[0m
+[dev:web] [2m2:32:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.365 ms - -[0m
+[dev:api] [0mGET /api/products/1 [36m304[0m 310.508 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 357.150 ms - 458[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.944 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 351.837 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 364.542 ms - 458[0m
+[dev:api] [0mGET /api/categories [36m304[0m 375.834 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 416.923 ms - -[0m
+[dev:api] [0mGET /api/products/1 [36m304[0m 426.680 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 322.084 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 795.258 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 485.099 ms - -[0m
+[dev:web] [2m2:39:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/19 [32m200[0m 907.544 ms - 458[0m
+[dev:web] [2m2:39:44 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:39:46 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ new dependencies optimized: [33mlucide-react[32m[39m
+[dev:web] [2m2:39:46 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.503 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.285 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 392.208 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 415.584 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 403.564 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 288.574 ms - 458[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 712.335 ms - -[0m
+[dev:web] [2m2:39:53 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/19 [32m200[0m 359.101 ms - 458[0m
+[dev:web] [2m2:40:09 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 381.602 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 406.348 ms - -[0m
+[dev:web] [2m2:43:12 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 809.289 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 404.686 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 455.337 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 334.888 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 953.888 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 589.641 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 464.347 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 417.259 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 317.392 ms - 4196[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1086.392 ms - 2573[0m
+[dev:web] [2m2:48:07 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 632.011 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 804.216 ms - -[0m
+[dev:web] [2m2:51:29 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:51:34 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:51:37 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:51:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:51:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 722.049 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 306.853 ms - -[0m
+[dev:web] [2m2:51:47 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/ProductCard.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 405.352 ms - -[0m
+[dev:web] [2m2:51:50 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 479.483 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 794.013 ms - 2573[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 301.976 ms - -[0m
+[dev:web] [2m2:51:53 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\pages\ProductDetailPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/19 [32m200[0m 353.974 ms - 458[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 340.838 ms - 458[0m
+[dev:web] [2m2:51:56 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\pages\ProductDetailPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/19 [32m200[0m 452.304 ms - 458[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 443.603 ms - 458[0m
+[dev:web] [2m2:51:59 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 303.522 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 311.752 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 723.705 ms - -[0m
+[dev:api] [0mGET /api/products/16 [32m200[0m 422.867 ms - 644[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 924.691 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 714.331 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 316.696 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 378.930 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 705.960 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 555.440 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 921.385 ms - -[0m
+[dev:web] [2m2:58:48 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:58:52 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products/19 [32m200[0m 639.896 ms - 458[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 994.759 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 643.454 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1518.993 ms - 2573[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 7684.815 ms - 458[0m
+[dev:api] [0mGET /api/products [32m200[0m 456.504 ms - 11842[0m
+[dev:api] [0mGET /api/products [36m304[0m 516.173 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 454.868 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.125 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.873 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.005 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.982 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 584.773 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 592.863 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 882.629 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 941.129 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 327.815 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 323.884 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 330.713 ms - -[0m
+[dev:api] [0mPOST /api/products [32m201[0m 562.486 ms - 320[0m
+[dev:api] [0mGET /api/products/23 [32m200[0m 466.380 ms - 320[0m
+[dev:api] [0mDELETE /api/products/23 [32m200[0m 386.238 ms - 11[0m
+[dev:api] [0mGET /api/products/23 [33m404[0m 304.170 ms - 21[0m
+[dev:api] [0mGET /api/products [32m200[0m 504.371 ms - 11842[0m
+[dev:web] [2m3:03:11 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products [36m304[0m 439.539 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 460.858 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 936.392 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 941.003 ms - -[0m
+[dev:web] [2m3:03:27 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver/index.ts[22m
+[dev:api] 3:03:27 AM [tsx] change in ./server\index.ts Restarting...
+[dev:api] Maison Rose API listening on :3001
+[dev:web] [2m3:03:31 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:06:48 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:08:37 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver/index.ts[22m
+[dev:api] 3:08:37 AM [tsx] change in ./server\index.ts Rerunning...
+[dev:api] Maison Rose API listening on :3001
+[dev:api] [0mGET /api/featured-products [36m304[0m 1149.501 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 13.900 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.886 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 477.423 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 489.054 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 757.293 ms - -[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 295.173 ms - 458[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 649.199 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 738.604 ms - 2573[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 299.275 ms - 458[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 689.092 ms - 2573[0m
+[dev:api] [0mDELETE /api/categories/99 [32m200[0m 504.961 ms - 11[0m
+[dev:web] [2m3:08:52 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mtest-cat-delete.cjs[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 903.878 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.210 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.587 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 388.041 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 401.062 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 552.553 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 907.748 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 849.941 ms - 2573[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 287.025 ms - 458[0m
+[dev:api] [0mGET /api/products/19 [32m200[0m 364.902 ms - 458[0m
+[dev:api] [0mPOST /api/categories [32m201[0m 1244.635 ms - 149[0m
+[dev:api] [0mDELETE /api/categories/10 [32m200[0m 291.946 ms - 11[0m
+[dev:api] [0mGET /api/categories [32m200[0m 306.111 ms - 1010[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 589.918 ms - 2573[0m
+[dev:web] [2m3:08:59 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mtest-cat-delete.cjs[22m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 315.899 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 729.487 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 729.317 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 769.585 ms - 2573[0m
+[dev:web] [2m3:12:27 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver/index.ts[22m
+[dev:api] 3:12:27 AM [tsx] change in ./server\index.ts Restarting...
+[dev:api] Maison Rose API listening on :3001
+[dev:web] [2m3:12:30 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/types.ts[22m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 630.842 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 865.461 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1198.151 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 301.476 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 605.853 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 586.438 ms - 2573[0m
+[dev:web] [2m3:12:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [32m200[0m 614.927 ms - 2573[0m
+[dev:web] [2m3:12:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [32m200[0m 305.168 ms - 59[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 312.534 ms - 59[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 300.369 ms - -[0m
+[dev:web] [2m3:12:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [32m200[0m 434.774 ms - 59[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 407.027 ms - 59[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 403.254 ms - -[0m
+[dev:web] [2m3:12:46 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 424.526 ms - -[0m
+[dev:web] [2m3:12:50 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 419.828 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 423.672 ms - -[0m
+[dev:web] [2m3:12:53 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 496.059 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 501.447 ms - -[0m
+[dev:web] [2m3:13:04 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:13:09 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:13:13 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:13:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:13:23 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [32m200[0m 1402.817 ms - 59[0m
+[dev:api] [0mPUT /api/site-images [32m200[0m 1679.508 ms - 11[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 494.450 ms - 111[0m
+[dev:api] [0mPUT /api/site-images [32m200[0m 1627.736 ms - 11[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 429.609 ms - 59[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 472.450 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 627.057 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 476.326 ms - 59[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 934.475 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 807.610 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 826.649 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 295.753 ms - 59[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 289.180 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.968 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.452 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.731 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.356 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 316.266 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 362.962 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 632.549 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 411.686 ms - -[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 1973.835 ms - 146[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 377.928 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 760.516 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.152 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.400 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 419.988 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 426.286 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 915.199 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 354.866 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 726.988 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 301.775 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 782.892 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 450.132 ms - -[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 1281.284 ms - 146[0m
+[dev:api] [0mPUT /api/site-images [32m200[0m 1432.961 ms - 11[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 497.244 ms - 193[0m
+[dev:api] [0mGET /api/categories [36m304[0m 492.456 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 497.579 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 891.073 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 354.617 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 785.884 ms - -[0m
+[dev:web] [2m3:19:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products [36m304[0m 564.049 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 577.913 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 608.736 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 879.426 ms - -[0m
+[dev:web] [2m3:19:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:19:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh (new export)
+[dev:web] [2m3:19:40 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 423.229 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 427.777 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 427.438 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 920.413 ms - -[0m
+[dev:web] [2m3:19:45 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:19:45 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:19:45 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 558.063 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 547.172 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 553.038 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1048.953 ms - -[0m
+[dev:web] [2m3:19:49 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:19:50 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:19:50 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 361.714 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 366.240 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 366.197 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 858.603 ms - -[0m
+[dev:web] [2m3:19:56 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:19:57 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:19:57 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 377.367 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 385.082 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 391.193 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 697.422 ms - -[0m
+[dev:web] [2m3:20:05 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:20:06 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:20:06 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 427.517 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 421.200 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 427.108 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 823.484 ms - -[0m
+[dev:web] [2m3:20:15 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:20:16 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:20:16 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 377.768 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 388.496 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 386.306 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 668.090 ms - -[0m
+[dev:web] [2m3:20:19 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:20:20 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:20:20 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 482.698 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 471.622 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 482.805 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 956.053 ms - -[0m
+[dev:web] [2m3:20:35 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:20:36 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:20:36 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products [36m304[0m 411.988 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 415.347 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 516.959 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1985.053 ms - -[0m
+[dev:api] [0mPUT /api/site-images [32m200[0m 1605.812 ms - 11[0m
+[dev:api] [0mGET /api/products [36m304[0m 307.834 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 382.698 ms - 59[0m
+[dev:api] [0mGET /api/categories [36m304[0m 397.920 ms - -[0m
+[dev:web] [2m3:21:43 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/featured-products [36m304[0m 890.552 ms - -[0m
+[dev:web] [2m3:21:44 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:21:44 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 292.650 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 299.544 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 304.868 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 596.003 ms - -[0m
+[dev:web] [2m3:21:47 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:21:48 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:21:48 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 372.742 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 371.790 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 377.798 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 497.822 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 897.634 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 682.129 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 467.778 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 712.106 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 468.959 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 457.589 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 394.397 ms - -[0m
+[dev:api] [0mDELETE /api/products/1 [32m200[0m 1305.514 ms - 11[0m
+[dev:api] [0mGET /api/products [32m200[0m 307.716 ms - 11222[0m
+[dev:api] [0mGET /api/categories [36m304[0m 328.805 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 660.978 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 369.357 ms - -[0m
+[dev:web] [2m3:25:54 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:25:55 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m3:25:55 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 424.377 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 417.845 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 424.105 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 812.638 ms - -[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 1499.500 ms - 146[0m
+[dev:api] [0mPUT /api/site-images [32m200[0m 3566.563 ms - 11[0m
+[dev:api] [0mGET /api/products [36m304[0m 323.990 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 331.211 ms - 193[0m
+[dev:api] [0mGET /api/categories [36m304[0m 363.688 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 644.601 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 497.337 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 839.860 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 819.586 ms - 193[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1317.756 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 1129.595 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1035.325 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 921.205 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 939.253 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 373.044 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 557.959 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 856.746 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 320.187 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 731.897 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 710.777 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1224.228 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 378.118 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 892.011 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 519.276 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 871.613 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 687.892 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 969.735 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 982.654 ms - 193[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1075.532 ms - 2573[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 294.429 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1483.639 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 1914.046 ms - 193[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 586.224 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 300.013 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 301.748 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 294.142 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 2572.572 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 647.362 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1015.717 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 395.600 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 425.832 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 464.268 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 460.520 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 730.770 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 752.610 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 293.029 ms - 193[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 282.755 ms - 193[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 592.394 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 304.938 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 608.092 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 299.939 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 407.925 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 823.023 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.611 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.020 ms - 24[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 1866.073 ms - 146[0m
+[dev:api] [0mPUT /api/site-images [32m200[0m 2277.494 ms - 11[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 487.582 ms - 327[0m
+[dev:api] [0mGET /api/categories [36m304[0m 489.164 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 493.390 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 764.083 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 423.057 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 727.632 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 346.790 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 847.904 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 405.180 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 419.490 ms - 3576[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 383.144 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 548.145 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 928.863 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 353.378 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 363.831 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.580 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.565 ms - 24[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 3270.823 ms - 187[0m
+[dev:api] [0mGET /api/auth/me [32m200[0m 0.837 ms - 19[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.945 ms - -[0m
+[dev:api] [0mGET /api/products [32m200[0m 308.087 ms - 11222[0m
+[dev:api] [0mGET /api/categories [32m200[0m 704.990 ms - 1010[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1253.310 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.976 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.927 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 535.332 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 564.395 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 836.595 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 372.480 ms - 327[0m
+[dev:web] [2m3:53:44 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [32m200[0m 374.560 ms - 327[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 370.905 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 638.649 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 287.364 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 697.641 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 579.936 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 511.191 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 915.026 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 485.981 ms - 3576[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 520.897 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 391.478 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 404.569 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 563.280 ms - 327[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 572.186 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 578.768 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 582.077 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 859.185 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 858.053 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 289.490 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 293.498 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 598.162 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 302.682 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 454.793 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 819.063 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 322.505 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 646.902 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 598.529 ms - 327[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 589.710 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 870.139 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 888.306 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 902.327 ms - 2573[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 888.142 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 309.797 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 606.217 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 338.261 ms - -[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 2364.530 ms - 146[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 295.505 ms - -[0m
+[dev:api] [0mPOST /api/products [32m201[0m 797.716 ms - 455[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.201 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.002 ms - -[0m
+[dev:api] [0mGET /api/products [32m200[0m 326.066 ms - 11678[0m
+[dev:api] [0mGET /api/categories [36m304[0m 660.663 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1052.228 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 421.950 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 815.604 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 799.797 ms - 4032[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 332.609 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 685.186 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.846 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.537 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 311.431 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 612.995 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 631.144 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.713 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.470 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 735.750 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 289.632 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 346.569 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 817.845 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 2370.488 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 385.118 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 806.978 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 369.009 ms - -[0m
+[dev:api] [0mGET /api/products/25 [32m200[0m 413.790 ms - 455[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 413.102 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 694.963 ms - 2573[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 699.147 ms - 4032[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 723.838 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 321.603 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=accessories [36m304[0m 1143.628 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 1189.031 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 650.252 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 335.008 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 288.997 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 389.861 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 1328.025 ms - 4032[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 524.625 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 545.748 ms - -[0m
+[dev:api] [0mGET /api/products/25 [36m304[0m 849.428 ms - -[0m
+[dev:web] [2m4:03:26 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver/schemas.ts[22m
+[dev:api] 4:03:26 AM [tsx] change in ./server\schemas.ts Restarting...
+[dev:web] [2m4:03:28 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/products?main_category=bags[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:web] [2m4:03:28 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/site-images[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:api] Maison Rose API listening on :3001
+[dev:web] [2m4:03:31 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver/index.ts[22m
+[dev:api] 4:03:31 AM [tsx] change in ./server\index.ts Rerunning...
+[dev:web] [2m4:03:32 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/products?main_category=bags[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:web] [2m4:03:32 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/site-images[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:api] Maison Rose API listening on :3001
+[dev:web] [2m4:03:34 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver/index.ts[22m
+[dev:api] 4:03:34 AM [tsx] change in ./server\index.ts Rerunning...
+[dev:web] [2m4:03:34 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/featured-products[39m
+[dev:web] Error: read ECONNRESET
+[dev:web]     at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[dev:web] [2m4:03:34 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/site-images[39m
+[dev:web] Error: read ECONNRESET
+[dev:web]     at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[dev:web] [2m4:03:34 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/site-images[39m
+[dev:web] Error: read ECONNRESET
+[dev:web]     at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[dev:web] [2m4:03:34 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/products?main_category=bags[39m
+[dev:web] Error: read ECONNRESET
+[dev:web]     at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[dev:web] [2m4:03:34 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/products?main_category=accessories[39m
+[dev:web] Error: read ECONNRESET
+[dev:web]     at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[dev:web] [2m4:03:34 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/featured-products[39m
+[dev:web] Error: read ECONNRESET
+[dev:web]     at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[dev:web] [2m4:03:34 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/site-images[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:web] [2m4:03:35 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/site-images[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:web] [2m4:03:35 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/products?main_category=bags[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:web] [2m4:03:35 AM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/site-images[39m
+[dev:web] AggregateError [ECONNREFUSED]: 
+[dev:web]     at internalConnectMultiple (node:net:1194:18)
+[dev:web]     at afterConnectMultiple (node:net:1784:7)
+[dev:api] Maison Rose API listening on :3001
+[dev:api] [0mGET /api/site-images [32m200[0m 514.383 ms - 327[0m
+[dev:api] [0mGET /api/products?main_category=accessories [32m200[0m 509.406 ms - 3848[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 915.210 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 294.069 ms - 327[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 382.014 ms - -[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 775.153 ms - 2573[0m
+[dev:web] [2m4:03:38 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:03:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m4:03:39 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [32m200[0m 332.299 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1365.838 ms - 2573[0m
+[dev:web] [2m4:03:43 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:03:43 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m4:03:43 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/site-images [36m304[0m 391.133 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [32m200[0m 397.750 ms - 4032[0m
+[dev:web] [2m4:04:07 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:04:07 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m4:04:07 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/auth/me [36m304[0m 17.702 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 4.174 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 4.340 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.663 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 427.670 ms - -[0m
+[dev:api] [0mGET /api/products [32m200[0m 449.471 ms - 11678[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 743.975 ms - -[0m
+[dev:web] [2m4:04:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:04:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m4:04:42 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 391.902 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 473.792 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 693.997 ms - -[0m
+[dev:api] [0mPOST /api/auth/logout [32m200[0m 1.985 ms - 11[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.990 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.678 ms - 24[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 1505.429 ms - 187[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.737 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.926 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 316.476 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 366.015 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 668.945 ms - -[0m
+[dev:web] [2m4:07:13 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:07:14 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m4:07:14 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/products [36m304[0m 383.742 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 410.923 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 707.202 ms - -[0m
+[dev:web] [2m4:07:17 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:07:18 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m4:07:18 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.923 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 303.346 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 322.086 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 609.183 ms - -[0m
+[dev:web] [2m4:07:27 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:07:28 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m4:07:28 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:api] [0mGET /api/categories [36m304[0m 364.324 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 371.571 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 673.297 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 6832.876 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 7503.049 ms - -[0m
+[dev:api] [0mPOST /api/auth/logout [32m200[0m 2.589 ms - 11[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.154 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.917 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.342 ms - 24[0m
+[dev:api] [0mGET /api/products [36m304[0m 470.857 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.353 ms - 24[0m
+[dev:api] [0mGET /api/categories [36m304[0m 445.482 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.403 ms - 24[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 774.837 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.972 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.222 ms - 24[0m
+[dev:api] [0mGET /api/products [36m304[0m 453.355 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 503.533 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.997 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.001 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.968 ms - 24[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 18904.925 ms - 187[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.536 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 315.942 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 4.204 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 349.268 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 32147.285 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 431.904 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.954 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.896 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.309 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 1.013 ms - 24[0m
+[dev:api] [0mGET /api/categories [36m304[0m 1842.933 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 1847.991 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 2309.244 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 397.759 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 741.709 ms - -[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 726.120 ms - 187[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.521 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 362.205 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.425 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 385.095 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 739.515 ms - -[0m
+[dev:api] [0mGET /api/products/10 [32m200[0m 439.820 ms - 641[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.397 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.190 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 701.608 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 873.582 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1299.799 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 372.654 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.808 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.607 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 0.610 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 2.742 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 529.173 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 648.676 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 892.985 ms - -[0m
+[dev:api] [0mPOST /api/auth/logout [32m200[0m 1.548 ms - 11[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.854 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.864 ms - 24[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 1639.968 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 2118.325 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 436.374 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 454.695 ms - -[0m
+[dev:api] [0mGET /api/products/25 [32m200[0m 428.830 ms - 455[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 579.879 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 565.649 ms - -[0m
+[dev:api] [0mGET /api/products/8 [32m200[0m 353.249 ms - 636[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 444.426 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 871.235 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 493.532 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1080.470 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 419.231 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1217.242 ms - -[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.908 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.767 ms - 24[0m
+[dev:api] [0mPOST /api/auth/login [32m200[0m 1721.918 ms - 187[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.924 ms - -[0m
+[dev:api] [0mGET /api/auth/me [36m304[0m 1.465 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 606.877 ms - -[0m
+[dev:api] [0mGET /api/products [36m304[0m 657.775 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1105.739 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 474.212 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 484.355 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 443.371 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1143.207 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 981.024 ms - -[0m
+[dev:api] [0mPOST /api/upload [32m201[0m 1462.161 ms - 146[0m
+[dev:api] [0mPUT /api/site-images [32m200[0m 2005.804 ms - 11[0m
+[dev:api] [0mGET /api/products [36m304[0m 343.524 ms - -[0m
+[dev:api] [0mGET /api/categories [36m304[0m 341.392 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 408.254 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 893.312 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 630.017 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 1132.296 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=bags [36m304[0m 555.041 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 653.002 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 552.340 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 478.975 ms - -[0m
+[dev:api] [0mGET /api/products?main_category=jewelry [36m304[0m 483.871 ms - -[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 341.452 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 640.649 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1179.217 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [36m304[0m 558.787 ms - -[0m
+[dev:api] [0mGET /api/featured-products [36m304[0m 976.403 ms - -[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 973.689 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1471.279 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 493.455 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1091.289 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 336.736 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 1271.800 ms - 2573[0m
+[dev:api] [0mPOST /api/auth/logout [32m200[0m 1.039 ms - 11[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.605 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.526 ms - 24[0m
+[dev:web] [2m2:18:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/types.ts[22m
+[dev:api] [0mGET /api/site-images [32m200[0m 534.818 ms - 327[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.608 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.782 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.586 ms - 24[0m
+[dev:api] [0mGET /api/auth/me [33m401[0m 0.878 ms - 24[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 899.100 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 385.468 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 768.196 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 344.458 ms - 327[0m
+[dev:api] [0mGET /api/featured-products [32m200[0m 678.705 ms - 2573[0m
+[dev:api] [0mGET /api/site-images [32m200[0m 345.422 ms - 327[0m
+[dev:api] 2:18:13 PM [tsx] change in ./server\index.ts Restarting...
+[dev:web] [2m2:18:13 PM[22m [31m[1m[vite][22m[39m [31mhttp proxy error: /api/featured-products[39m
+[dev:web] Error: read ECONNRESET
+[dev:web]     at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[dev:api] Maison Rose API listening on :3001
+[dev:web] [2m2:18:36 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:18:37 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [33mhmr invalidate [39m[2m/src/pages/AdminPages.tsx[22m Could not Fast Refresh ("toast" export is incompatible). Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[dev:web] [2m2:18:37 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:18:44 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:18:58 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:28:45 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/CatalogPage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:49:30 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:49:33 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:49:38 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:52:00 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m2:52:09 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:19:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:19:26 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:19:35 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mserver/index.ts[22m
+[dev:web] [2m3:25:29 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:37:56 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:47:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:47:52 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m3:48:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\components\ParallaxImage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:00:53 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:03:50 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:08:25 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\pages\ProductDetailPage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:16:03 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/@fs/F:\maison-rose-best-yet-Latest-Zipzip\maison-rose-best-yet-Latest-Zipzip\src\pages\ProductDetailPage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:19:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:21:59 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/PublicChrome.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:23:30 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:23:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:23:48 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m
+[dev:web] [2m4:26:07 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/HomePage.tsx, /src/styles/globals.css[22m

@@ -1,0 +1,156 @@
+
+> maison-rose@1.0.0 dev
+> concurrently -k "npm:dev:api" "npm:dev:web"
+
+[0m[dev:api][0m 
+[0m[dev:api][0m > maison-rose@1.0.0 dev:api
+[0m[dev:api][0m > tsx watch server/index.ts
+[0m[dev:api][0m 
+[0m[dev:web][0m 
+[0m[dev:web][0m > maison-rose@1.0.0 dev:web
+[0m[dev:web][0m > vite --host 0.0.0.0 --port 5000
+[0m[dev:web][0m 
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m1009[22m[2m[0m ms[22m
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+[0m[dev:web][0m   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.24.0.2:[1m5000[22m/[39m
+[0m[dev:api][0m Maison Rose API listening on :3001
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 851.770 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 334.126 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 1035.981 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.647 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.583 ms - 24[0m
+[0m[dev:api][0m [0mPOST /api/auth/login [32m200[0m 683.393 ms - 187[0m
+[0m[dev:api][0m [0mGET /api/auth/me [32m200[0m 1.739 ms - 19[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.043 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [32m200[0m 198.946 ms - 1010[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 384.698 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [32m200[0m 460.938 ms - 11752[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.404 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.435 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 583.501 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products/19 [32m200[0m 186.116 ms - 358[0m
+[0m[dev:api][0m [0mPOST /api/upload [32m201[0m 870.539 ms - 146[0m
+[0m[dev:api][0m [0mPUT /api/products/19 [32m200[0m 394.164 ms - 459[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.697 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.004 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [32m200[0m 367.333 ms - 11853[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 461.541 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 528.959 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=bags [32m200[0m 509.282 ms - 4207[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 416.246 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=bags [36m304[0m 674.311 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [32m200[0m 426.432 ms - 3800[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=accessories [32m200[0m 410.747 ms - 3848[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.139 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.074 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.158 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.080 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 217.296 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 372.817 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 407.054 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.588 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.441 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 192.369 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 481.942 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 704.686 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.634 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.599 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 195.397 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 223.312 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 386.455 ms - -[0m
+[0m[dev:web][0m [2m12:41:38 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[0m[dev:web][0m [2m12:41:39 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[0m[dev:web][0m [2m12:41:51 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mtailwind.config.js[22m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 457.298 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 484.175 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 949.440 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.218 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 1076.696 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.012 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 182.781 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 188.914 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=bags [36m304[0m 184.043 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 390.459 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 413.858 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=bags [32m200[0m 383.751 ms - 4207[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.450 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.198 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 395.113 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 380.392 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.990 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.617 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 187.310 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 189.318 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.602 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.615 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 706.372 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 394.742 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 839.580 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 702.466 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 623.745 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [32m200[0m 196.405 ms - 3800[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=accessories [32m200[0m 389.581 ms - 3848[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=accessories [36m304[0m 402.095 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.298 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.345 ms - 24[0m
+[0m[dev:api][0m [0mPOST /api/auth/login [32m200[0m 812.415 ms - 187[0m
+[0m[dev:api][0m [0mGET /api/auth/me [32m200[0m 0.488 ms - 19[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.456 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [32m200[0m 178.225 ms - 11853[0m
+[0m[dev:api][0m [0mGET /api/categories [32m200[0m 193.298 ms - 1010[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 379.113 ms - -[0m
+[0m[dev:api][0m [0mPOST /api/upload [32m201[0m 4700.930 ms - 146[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 419.916 ms - 76[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 693.783 ms - 76[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 762.999 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [32m200[0m 211.434 ms - 3800[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 378.259 ms - 76[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 185.724 ms - 76[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 174.062 ms - 76[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.841 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.687 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 191.099 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 203.777 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 376.288 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [32m200[0m 201.073 ms - 3800[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [32m200[0m 174.722 ms - 3800[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [36m304[0m 179.221 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.716 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 1.773 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.799 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 179.760 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 220.581 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.518 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 385.065 ms - -[0m
+[0m[dev:api][0m [0mPOST /api/upload [32m201[0m 1521.931 ms - 146[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 209.313 ms - 76[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 209.460 ms - 76[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.463 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.664 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 206.491 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 379.871 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 689.163 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products/2 [32m200[0m 203.081 ms - 614[0m
+[0m[dev:api][0m [0mPUT /api/products/2 [32m200[0m 211.934 ms - 604[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.603 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 190.882 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 411.383 ms - -[0m
+[0m[dev:api][0m [0mGET /api/auth/me [36m304[0m 0.839 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products [32m200[0m 499.039 ms - 11843[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 598.027 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [36m304[0m 188.664 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=accessories [36m304[0m 217.078 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=bags [32m200[0m 191.273 ms - 4197[0m
+[0m[dev:api][0m [0mGET /api/products [36m304[0m 215.596 ms - -[0m
+[0m[dev:api][0m [0mGET /api/categories [36m304[0m 550.052 ms - -[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=bags [36m304[0m 717.142 ms - -[0m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 712.491 ms - -[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 951.611 ms - 76[0m
+[0m[dev:api][0m [0mPOST /api/upload [32m201[0m 824.480 ms - 146[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 690.504 ms - 76[0m
+[0m[dev:api][0m [0mPOST /api/products [31m500[0m 477.281 ms - 76[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 1885.642 ms - 2559[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=bags [32m200[0m 780.840 ms - 4197[0m
+[0m[dev:api][0m [0mGET /api/products?main_category=jewelry [32m200[0m 393.712 ms - 3800[0m

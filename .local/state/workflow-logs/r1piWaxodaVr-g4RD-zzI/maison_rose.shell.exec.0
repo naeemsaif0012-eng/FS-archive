@@ -1,0 +1,245 @@
+
+> maison-rose@1.0.0 dev
+> concurrently -k "npm:dev:api" "npm:dev:web"
+
+[0m[dev:web][0m 
+[0m[dev:web][0m > maison-rose@1.0.0 dev:web
+[0m[dev:web][0m > vite --host 0.0.0.0 --port 5000
+[0m[dev:web][0m 
+[0m[dev:api][0m 
+[0m[dev:api][0m > maison-rose@1.0.0 dev:api
+[0m[dev:api][0m > tsx watch server/index.ts
+[0m[dev:api][0m 
+[0m[dev:web][0m [2m12:14:51 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m337[22m[2m[0m ms[22m
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+[0m[dev:web][0m   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.24.0.2:[1m5000[22m/[39m
+[0m[dev:api][0m Maison Rose API listening on :3001
+[0m[dev:api][0m [0mGET / [33m404[0m 2.049 ms - 139[0m
+[0m[dev:api][0m [0mGET /api/featured-products [32m200[0m 1400.993 ms - 37[0m
+[0m[dev:web][0m [2m12:15:01 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 1007.377 ms - -[0m
+[0m[dev:web][0m [2m12:15:02 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 964.385 ms - -[0m
+[0m[dev:web][0m [2m12:15:03 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/featured-products [36m304[0m 686.452 ms - -[0m
+[0m[dev:web][0m [2m12:15:04 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.797 ms - 24[0m
+[0m[dev:web][0m [2m12:15:13 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.151 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.398 ms - 24[0m
+[0m[dev:web][0m [2m12:15:13 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.369 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.919 ms - 24[0m
+[0m[dev:web][0m [2m12:15:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.260 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.367 ms - 24[0m
+[0m[dev:web][0m [2m12:15:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.320 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.266 ms - 24[0m
+[0m[dev:web][0m [2m12:15:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.557 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.282 ms - 24[0m
+[0m[dev:web][0m [2m12:15:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.281 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.110 ms - 24[0m
+[0m[dev:web][0m [2m12:15:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.408 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 7.559 ms - 24[0m
+[0m[dev:web][0m [2m12:15:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.288 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.729 ms - 24[0m
+[0m[dev:web][0m [2m12:15:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.221 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.257 ms - 24[0m
+[0m[dev:web][0m [2m12:15:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.337 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.364 ms - 24[0m
+[0m[dev:web][0m [2m12:15:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.304 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.253 ms - 24[0m
+[0m[dev:web][0m [2m12:15:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.205 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.250 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.527 ms - 24[0m
+[0m[dev:web][0m [2m12:15:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.253 ms - 24[0m
+[0m[dev:web][0m [2m12:15:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.197 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.826 ms - 24[0m
+[0m[dev:web][0m [2m12:15:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.284 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.269 ms - 24[0m
+[0m[dev:web][0m [2m12:15:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.154 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.266 ms - 24[0m
+[0m[dev:web][0m [2m12:15:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.251 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.232 ms - 24[0m
+[0m[dev:web][0m [2m12:15:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.203 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.428 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.188 ms - 24[0m
+[0m[dev:web][0m [2m12:15:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.315 ms - 24[0m
+[0m[dev:web][0m [2m12:15:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.220 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.260 ms - 24[0m
+[0m[dev:web][0m [2m12:15:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.249 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.418 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.209 ms - 24[0m
+[0m[dev:web][0m [2m12:16:04 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.330 ms - 24[0m
+[0m[dev:web][0m [2m12:16:04 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.291 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.242 ms - 24[0m
+[0m[dev:web][0m [2m12:16:04 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.264 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.251 ms - 24[0m
+[0m[dev:web][0m [2m12:16:04 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.281 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.322 ms - 24[0m
+[0m[dev:web][0m [2m12:16:04 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.156 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.205 ms - 24[0m
+[0m[dev:web][0m [2m12:16:04 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.338 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.358 ms - 24[0m
+[0m[dev:web][0m [2m12:16:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.248 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.239 ms - 24[0m
+[0m[dev:web][0m [2m12:16:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.246 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.326 ms - 24[0m
+[0m[dev:web][0m [2m12:16:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.194 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.237 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.223 ms - 24[0m
+[0m[dev:web][0m [2m12:16:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.764 ms - 24[0m
+[0m[dev:web][0m [2m12:16:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.185 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.300 ms - 24[0m
+[0m[dev:web][0m [2m12:16:05 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.146 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.592 ms - 24[0m
+[0m[dev:web][0m [2m12:16:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.256 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.283 ms - 24[0m
+[0m[dev:web][0m [2m12:16:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.164 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.460 ms - 24[0m
+[0m[dev:web][0m [2m12:16:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.147 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.153 ms - 24[0m
+[0m[dev:web][0m [2m12:16:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.207 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.250 ms - 24[0m
+[0m[dev:web][0m [2m12:16:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.194 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.278 ms - 24[0m
+[0m[dev:web][0m [2m12:16:06 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.449 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.292 ms - 24[0m
+[0m[dev:web][0m [2m12:16:07 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.277 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.423 ms - 24[0m
+[0m[dev:web][0m [2m12:16:07 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.917 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.169 ms - 24[0m
+[0m[dev:web][0m [2m12:16:07 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.299 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.212 ms - 24[0m
+[0m[dev:web][0m [2m12:16:07 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.204 ms - 24[0m
+[0m[dev:web][0m [2m12:16:27 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mreplit.md[22m
+[0m[dev:web][0m [2m12:16:27 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:16:53 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.cache/replit/toolchain.json[22m
+[0m[dev:web][0m [2m12:16:53 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:16:53 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.cache/replit/env/latest[22m
+[0m[dev:web][0m [2m12:16:53 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.cache/replit/env/latest.json[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/.config/nextjs-nodejs/config.json[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/accessories/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/layout.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/admin/layout.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/admin/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/admin/dashboard/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/admin/products/[id]/edit/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/admin/products/new/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/admin/setup/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/bags/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/app/jewelry/page.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/components/CartDrawer.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/components/Footer.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/components/MobileDrawer.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/components/Navbar.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/components/ProductCard.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/components/SearchOverlay.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/components.json[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/context/CartContext.tsx[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/data/admin-settings.json[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/data/categories.json[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/data/featured-products.json[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/data/products.json[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/data/products.ts[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/DESIGN.md[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/drizzle.config.ts[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/index.html[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/lib/types.ts[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/lib/utils.ts[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/next-env.d.ts[22m
+[0m[dev:web][0m [2m12:18:41 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m changed tsconfig file detected: /home/runner/workspace/maison-rose-standalonezip/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/package.json[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/postcss.config.js[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/public/uploads/.gitkeep[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/replit.md[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/replit.nix[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/server/auth.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/server/config.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/server/index.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/server/schemas.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/server/scripts/seed.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/server/supabase.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/App.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/components/ProductCard.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/components/PublicChrome.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/context/CartContext.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/lib/api.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/main.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/pages/AdminPages.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/pages/CatalogPage.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/pages/HomePage.tsx[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/styles/globals.css[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/src/types.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/supabase/migrations/0001_initial_schema.sql[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/tailwind.config.js[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/tsconfig.json[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mmaison-rose-standalonezip/vite.config.ts[22m
+[0m[dev:web][0m [2m12:18:42 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:19:11 PM[22m [36m[1m[vite][22m[39m changed tsconfig file detected: /home/runner/workspace/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[0m[dev:web][0m [2m12:19:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mtsconfig.json[22m
+[0m[dev:web][0m [2m12:19:11 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:19:13 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/App.tsx, /src/styles/globals.css[22m
+[0m[dev:web][0m [2m12:19:13 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:19:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.replit[22m
+[0m[dev:web][0m [2m12:19:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:19:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.cache/replit/toolchain.json[22m
+[0m[dev:web][0m [2m12:19:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:19:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.cache/replit/env/latest[22m
+[0m[dev:web][0m [2m12:19:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.cache/replit/env/latest.json[22m
+[0m[dev:web][0m [2m12:19:18 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:20:49 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[0m[dev:web][0m [2m12:20:49 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [2m12:20:50 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/AdminPages.tsx, /src/styles/globals.css[22m
+[0m[dev:web][0m [2m12:20:50 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/r1piWaxodaVr-g4RD-zzI/maison_rose.shell.exec.0[22m
+[0m[dev:web][0m [0mnpm run dev:web exited with code SIGTERM[0m
+[0m-->[0m [0mSending SIGTERM to other processes..[0m
+[0m[dev:api][0m [90m12:21:09 PM[39m [96m[tsx][39m [33mPrevious process hasn't exited yet. Force killing...[39m
+[0m[dev:api][0m [0mnpm run dev:api exited with code SIGTERM[0m
+⠙[1G[0K

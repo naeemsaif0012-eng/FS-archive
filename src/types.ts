@@ -17,3 +17,4 @@ export interface Product {
 
 export interface Category { id: number; name: string; slug: string; main_category: string; created_at: string }
 export interface FeaturedResponse { productIds: number[]; items: Product[] }
+export interface SiteImages { hero: string | null; hero_mobile: string | null; bags: string | null; jewelry: string | null; accessories: string | null }

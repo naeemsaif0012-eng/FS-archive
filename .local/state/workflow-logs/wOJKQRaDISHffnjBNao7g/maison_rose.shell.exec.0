@@ -1,0 +1,86 @@
+
+> maison-rose@1.0.0 dev
+> concurrently -k "npm:dev:api" "npm:dev:web"
+
+[0m[dev:api][0m 
+[0m[dev:api][0m > maison-rose@1.0.0 dev:api
+[0m[dev:api][0m > tsx watch server/index.ts
+[0m[dev:api][0m 
+[0m[dev:web][0m 
+[0m[dev:web][0m > maison-rose@1.0.0 dev:web
+[0m[dev:web][0m > vite --host 0.0.0.0 --port 5000
+[0m[dev:web][0m 
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m[1mVITE[22m v6.4.3[39m  [2mready in [0m[1m238[22m[2m[0m ms[22m
+[0m[dev:web][0m 
+[0m[dev:web][0m   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5000[22m/[39m
+[0m[dev:web][0m   [32m➜[39m  [1mNetwork[22m: [36mhttp://172.24.0.2:[1m5000[22m/[39m
+[0m[dev:api][0m Maison Rose API listening on :3001
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 10.436 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.501 ms - 24[0m
+[0m[dev:web][0m [2m12:25:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.882 ms - 24[0m
+[0m[dev:web][0m [2m12:25:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.281 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.368 ms - 24[0m
+[0m[dev:web][0m [2m12:25:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.392 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.335 ms - 24[0m
+[0m[dev:web][0m [2m12:25:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.369 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.313 ms - 24[0m
+[0m[dev:web][0m [2m12:25:14 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.316 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.854 ms - 24[0m
+[0m[dev:web][0m [2m12:25:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.214 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.330 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.287 ms - 24[0m
+[0m[dev:web][0m [2m12:25:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.335 ms - 24[0m
+[0m[dev:web][0m [2m12:25:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.229 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.282 ms - 24[0m
+[0m[dev:web][0m [2m12:25:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.212 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.288 ms - 24[0m
+[0m[dev:web][0m [2m12:25:15 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.343 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.318 ms - 24[0m
+[0m[dev:web][0m [2m12:25:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 1.506 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.361 ms - 24[0m
+[0m[dev:web][0m [2m12:25:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.197 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.413 ms - 24[0m
+[0m[dev:web][0m [2m12:25:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.214 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.279 ms - 24[0m
+[0m[dev:web][0m [2m12:25:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.188 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.282 ms - 24[0m
+[0m[dev:web][0m [2m12:25:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.272 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.230 ms - 24[0m
+[0m[dev:web][0m [2m12:25:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.191 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.395 ms - 24[0m
+[0m[dev:web][0m [2m12:25:16 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.217 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.362 ms - 24[0m
+[0m[dev:web][0m [2m12:25:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.260 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.450 ms - 24[0m
+[0m[dev:web][0m [2m12:25:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.392 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.522 ms - 24[0m
+[0m[dev:web][0m [2m12:25:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.178 ms - 24[0m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.371 ms - 24[0m
+[0m[dev:web][0m [2m12:25:17 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2m.local/state/workflow-logs/wOJKQRaDISHffnjBNao7g/maison_rose.shell.exec.0[22m
+[0m[dev:api][0m [0mGET /api/auth/me [33m401[0m 0.277 ms - 24[0m
+[0m[dev:api][0m [90m12:25:29 PM[39m [96m[tsx][39m [33mPrevious process hasn't exited yet. Force killing...[39m
+[0m[dev:web][0m [0mnpm run dev:web exited with code SIGTERM[0m
+[0m-->[0m [0mSending SIGTERM to other processes..[0m
+[0m[dev:api][0m [0mnpm run dev:api exited with code SIGTERM[0m
+⠙[1G[0K

@@ -1,0 +1,32 @@
+VERDICT: REJECTED
+
+The setup is not reproducible as claimed: `npm run db:seed` seeds categories, products, and featured IDs only. It neither applies the Supabase migration nor reads/writes `data/admin-settings.json`, so it cannot seed the admin password. On a fresh Supabase project, the schema and initial admin must be created manually; until then the API either fails on missing tables or leaves the unauthenticated setup endpoint available for whoever reaches it first. This misses the stated “seed admin to Supabase” setup requirement.
+
+The committed `data/admin-settings.json` contains a bcrypt verifier for the admin password but is unused by runtime and seed code. It is therefore both ineffective setup data and an unnecessary authentication credential artifact; the SAST finding is relevant.
+
+`npm run typecheck` and `npm run build` pass. The Vite/Express workflow configuration itself is coherent.
+
+Security: no service-role key was found in the reviewed files; however, the committed admin password hash is a credential-verification artifact and should not be tracked.
+
+Next actions:
+1. Make initialization reproducible: apply the migration and seed the admin hash from a Replit Secret through an explicit, idempotent setup/seed command (or document and automate the equivalent secure Supabase step).
+2. Remove `data/admin-settings.json` from the repository and git history/working change; do not use a fixed repository password/hash.
+3. Verify a clean environment can run the documented setup and that `/admin` authenticates with the provisioned secret before completing the task.
+
+VERDICT: REJECTED
+VERDICT: REJECTED
+
+The setup is not reproducible as claimed: `npm run db:seed` seeds categories, products, and featured IDs only. It neither applies the Supabase migration nor reads/writes `data/admin-settings.json`, so it cannot seed the admin password. On a fresh Supabase project, the schema and initial admin must be created manually; until then the API either fails on missing tables or leaves the unauthenticated setup endpoint available for whoever reaches it first. This misses the stated “seed admin to Supabase” setup requirement.
+
+The committed `data/admin-settings.json` contains a bcrypt verifier for the admin password but is unused by runtime and seed code. It is therefore both ineffective setup data and an unnecessary authentication credential artifact; the SAST finding is relevant.
+
+`npm run typecheck` and `npm run build` pass. The Vite/Express workflow configuration itself is coherent.
+
+Security: no service-role key was found in the reviewed files; however, the committed admin password hash is a credential-verification artifact and should not be tracked.
+
+Next actions:
+1. Make initialization reproducible: apply the migration and seed the admin hash from a Replit Secret through an explicit, idempotent setup/seed command (or document and automate the equivalent secure Supabase step).
+2. Remove `data/admin-settings.json` from the repository and git history/working change; do not use a fixed repository password/hash.
+3. Verify a clean environment can run the documented setup and that `/admin` authenticates with the provisioned secret before completing the task.
+
+VERDICT: REJECTED
