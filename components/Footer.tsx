@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-2">
             <Link href="/">
               <h2 className="font-fraunces text-2xl md:text-3xl text-secondary-fixed mb-4 uppercase tracking-widest">
-                MAISON ROSE
+                FS ARCHIVES
               </h2>
             </Link>
             <p className="font-manrope text-sm text-secondary-fixed-dim/70 leading-relaxed mb-8 max-w-xs">
@@ -65,9 +65,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Maison */}
+          {/* Archives */}
           <div>
-            <h4 className="font-manrope text-[10px] uppercase tracking-widest text-secondary-fixed font-semibold mb-6">Maison</h4>
+            <h4 className="font-manrope text-[10px] uppercase tracking-widest text-secondary-fixed font-semibold mb-6">Archives</h4>
             <ul className="space-y-3">
               {['Our Heritage', 'The Atelier', 'Journal', 'Events'].map((item) => (
                 <li key={item}>
@@ -96,7 +96,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-champagne/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="font-manrope text-xs text-secondary-fixed-dim/50">© 2025 MAISON ROSE. All rights reserved.</p>
+          <p className="font-manrope text-xs text-secondary-fixed-dim/50">© 2025 FS ARCHIVES. All rights reserved.</p>
           <div className="flex gap-6">
             {['Terms', 'Cookies', 'Accessibility'].map((item) => (
               <a key={item} href="#" className="font-manrope text-xs text-secondary-fixed-dim/50 hover:text-secondary-fixed/80 transition-colors">

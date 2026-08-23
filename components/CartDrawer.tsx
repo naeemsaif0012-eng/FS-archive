@@ -38,7 +38,7 @@ export default function CartDrawer() {
               <div key={idx}>
                 <div className="flex gap-4">
                   <div className="flex-1">
-                    <p className="font-manrope text-xs uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+                    <p className="font-manrope text-xs uppercase tracking-widest text-on-surface-variant mb-1">FS Archives</p>
                     <p className="font-fraunces text-base text-on-background mb-2">{item.name}</p>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center border border-outline-variant">

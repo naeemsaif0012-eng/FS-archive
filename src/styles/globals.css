@@ -1,7 +1,91 @@
 @import "tailwindcss";
 
-@theme { --color-surface: #FFFFFF; --color-surface-container-lowest: #FFFFFF; --color-surface-container-low: #FDF6F6; --color-surface-container: #F9DFDF; --color-surface-container-high: #F9DFDF; --color-surface-container-highest: #F9DFDF; --color-on-surface: #2A0D0D; --color-on-surface-variant: #7A6161; --color-on-background: #2A0D0D; --color-primary: #C98A9A; --color-primary-container: #F9DFDF; --color-on-primary: #2A0D0D; --color-on-primary-container: #2A0D0D; --color-tertiary: #F9DFDF; --color-on-tertiary: #2A0D0D; --color-outline: #F9DFDF; --color-outline-variant: #F9DFDF; --color-secondary-fixed: #F9DFDF; --color-secondary-fixed-dim: #F9DFDF; --font-fraunces: Fraunces, serif; --font-manrope: Manrope, sans-serif; --spacing-margin-desktop: 64px; --spacing-container-max: 1280px; }
-body { background-color: #FFFFFF; color: #2A0D0D; overflow-x: hidden; }
-.stagger-up { opacity: 1; transform: translateY(30px); transition: all 1s cubic-bezier(.2,.8,.2,1); }.stagger-up.in-view { opacity: 1; transform: translateY(0); }.parallax-bg { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; } @media (max-width: 1023px) { .parallax-bg { background-attachment: scroll; } }.ken-burns { animation: kenBurns 20s ease infinite alternate; } @keyframes kenBurns { from { transform:scale(1) } to { transform:scale(1.1) } }.image-fill { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-.bg-ink-plum { background-color: #F9DFDF; }.border-champagne { border-color: #F9DFDF; }.bg-bone { background-color: #FFFFFF; }.glint-container { position:relative; overflow:hidden; }.glint-container::after { content:''; position:absolute; top:0; left:-150%; width:50%; height:100%; background:linear-gradient(to right,transparent,rgba(255,255,255,.3),transparent); transform:skewX(-25deg); animation:glint 6s infinite; } @keyframes glint { 0% { left:-150% } 20%,100% { left:200% } }.quote-rule { width:48px; height:1px; background:#F9DFDF; }.scroll-indicator { animation:scrollBounce 2s ease-in-out infinite; } @keyframes scrollBounce { 0%,100% { transform:translateY(0) } 50% { transform:translateY(6px) } }
-.main-header { transition:background-color .4s ease,backdrop-filter .4s ease,box-shadow .4s ease; }.main-header.scrolled { background-color:rgba(255,255,255,.92)!important; backdrop-filter:blur(12px); box-shadow:0 1px 0 rgba(42,13,13,.06); }.mobile-drawer { transform:translateX(-100%); transition:transform .4s cubic-bezier(.2,.8,.2,1); }.mobile-drawer.open { transform:translateX(0); }.drawer-overlay { opacity:0; pointer-events:none; transition:opacity .4s ease; }.drawer-overlay.open { opacity:1; pointer-events:all; }.cart-drawer { transform:translateX(100%); transition:transform .4s cubic-bezier(.2,.8,.2,1); }.cart-drawer.open { transform:translateX(0); }.search-overlay { opacity:0; pointer-events:none; transition:opacity .3s ease; }.search-overlay.open { opacity:1; pointer-events:all; }.product-card { transition:transform .4s cubic-bezier(.2,.8,.2,1); }.product-card:hover { transform:translateY(-6px); }.product-card:hover .product-img { transform:scale(1.04); }.product-img { transition:transform .6s cubic-bezier(.2,.8,.2,1); }.product-card:hover .product-cta { opacity:1; transform:translateY(0); }.product-cta { opacity:0; transform:translateY(8px); transition:all .3s ease; } @media (max-width: 767px) { .product-cta { opacity:1; transform:translateY(0); } }
+@theme {
+  --color-surface: #FFFDFC;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #FAF2F0;
+  --color-surface-container: #F3E1E0;
+  --color-surface-container-high: #ECD5D3;
+  --color-surface-container-highest: #E5CBC8;
+  --color-on-surface: #2A1B1A;
+  --color-on-surface-variant: #6E5B58;
+  --color-on-background: #2A1B1A;
+  --color-primary: #9A4C5B;
+  --color-on-primary: #FFFFFF;
+  --color-primary-container: #F7E2E4;
+  --color-on-primary-container: #3B2026;
+  --color-tertiary: #A94E61;
+  --color-on-tertiary: #FFFFFF;
+  --color-tertiary-container: #FBE0E3;
+  --color-on-tertiary-container: #42151F;
+  --color-outline: #85706C;
+  --color-outline-variant: #D8C4C0;
+  --color-secondary-fixed: #FBE0E3;
+  --color-secondary-fixed-dim: #E9C8CB;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1DA851;
+  --font-fraunces: Fraunces, serif;
+  --font-manrope: Manrope, sans-serif;
+  --spacing-margin-desktop: 64px;
+  --spacing-container-max: 1280px;
+}
+
+html { scrollbar-gutter: stable; }
+
+body { background-color: var(--color-surface); color: var(--color-on-surface); overflow-x: hidden; }
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 1px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+.skeleton { position: relative; overflow: hidden; background-color: var(--color-surface-container); }
+.skeleton::after { content: ''; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent); animation: shimmer 1.6s infinite; }
+@keyframes shimmer { 100% { transform: translateX(100%) } }
+
+@media (prefers-reduced-motion: no-preference) {
+  .stagger-up { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1); }
+  .stagger-up.in-view { opacity: 1; transform: translateY(0); }
+}
+
+.parallax-bg { background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
+@media (max-width: 1023px) { .parallax-bg { background-attachment: scroll; } }
+
+.ken-burns { animation: kenBurns 7s ease infinite alternate; }
+@keyframes kenBurns { from { transform: scale(1) } to { transform: scale(1.15) } }
+
+.image-fill { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+.bg-ink-plum { background-color: var(--color-on-surface); }
+.border-champagne { border-color: var(--color-outline-variant); }
+.bg-bone { background-color: var(--color-surface); }
+
+.glint-container { position: relative; overflow: hidden; }
+.glint-container::after { content: ''; position: absolute; top: 0; left: -150%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,.3), transparent); transform: skewX(-25deg); animation: glint 6s infinite; }
+@keyframes glint { 0% { left: -150% } 20%, 100% { left: 200% } }
+
+.quote-rule { width: 48px; height: 1px; background: var(--color-outline-variant); }
+
+.scroll-indicator { animation: scrollBounce 2s ease-in-out infinite; }
+@keyframes scrollBounce { 0%, 100% { transform: translateY(0) } 50% { transform: translateY(6px) } }
+
+.main-header { transition: background-color .4s ease, backdrop-filter .4s ease, box-shadow .4s ease; }
+.main-header.scrolled { background-color: rgba(255,255,255,.92) !important; backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(42,13,13,.06); }
+
+.mobile-drawer { transform: translateX(-100%); transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+.mobile-drawer.open { transform: translateX(0); }
+.drawer-overlay { opacity: 0; pointer-events: none; transition: opacity .4s ease; }
+.drawer-overlay.open { opacity: 1; pointer-events: all; }
+.cart-drawer { transform: translateX(100%); transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+.cart-drawer.open { transform: translateX(0); }
+.search-overlay { opacity: 0; pointer-events: none; transition: opacity .3s ease; }
+.search-overlay.open { opacity: 1; pointer-events: all; }
+
+.product-card { transition: transform .4s cubic-bezier(.2,.8,.2,1); }
+.product-card:hover { transform: translateY(-6px); }
+.product-card:hover .product-img { transform: scale(1.04); }
+.product-img { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+.product-card:hover .product-cta { opacity: 1; transform: translateY(0); }
+.product-cta { opacity: 0; transform: translateY(8px); transition: all .3s ease; }
+@media (max-width: 767px) { .product-cta { opacity: 1; transform: translateY(0); } }

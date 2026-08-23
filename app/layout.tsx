@@ -37,7 +37,7 @@ const hankenGrotesk = Hanken_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'MAISON ROSE | Premium Editorial E-Commerce',
+  title: 'FS ARCHIVES | Premium Editorial E-Commerce',
   description: 'A Parisian atelier dedicated to the art of quiet luxury.',
 }
 

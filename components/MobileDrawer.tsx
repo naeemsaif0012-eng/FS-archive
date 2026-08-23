@@ -25,7 +25,7 @@ export default function MobileDrawer() {
       <div className={`mobile-drawer fixed top-0 left-0 h-full w-4/5 max-w-xs z-[70] bg-surface-container-lowest flex flex-col shadow-2xl ${isDrawerOpen ? 'open' : ''}`}>
         <div className="flex items-center justify-between px-6 py-6 border-b border-outline-variant">
           <Link href="/" onClick={closeDrawer} className="font-fraunces text-lg tracking-widest uppercase text-on-background">
-            MAISON ROSE
+            FS ARCHIVES
           </Link>
           <button onClick={closeDrawer}>
             <span className="material-symbols-outlined text-[22px] text-on-surface-variant">close</span>

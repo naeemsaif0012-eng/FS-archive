@@ -44,7 +44,7 @@ export default function AdminSetupPage() {
     <div className="min-h-screen bg-[#1a0a1e] flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-10">
-          <p className="font-fraunces text-2xl text-white tracking-[0.2em] uppercase">Maison Rose</p>
+          <p className="font-fraunces text-2xl text-white tracking-[0.2em] uppercase">FS Archives</p>
           <p className="font-manrope text-[10px] uppercase tracking-[0.25em] text-white/40 mt-2">Admin Setup</p>
         </div>
 

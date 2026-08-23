@@ -18,7 +18,7 @@ const faqs = [
 ]
 
 const contactCards = [
-  { icon: MessageCircle, title: 'WhatsApp', handle: `+92 ${whatsappNumber().slice(3)}`, description: 'The fastest way to reach us. Chat with our team for orders, holds, and questions about any piece in the archive.', href: `https://wa.me/${whatsappNumber()}`, cta: 'Chat on WhatsApp', buttonClass: 'bg-[#25D366] text-white hover:bg-[#1da851]' },
+  { icon: MessageCircle, title: 'WhatsApp', handle: `+92 ${whatsappNumber().slice(3)}`, description: 'The fastest way to reach us. Chat with our team for orders, holds, and questions about any piece in the archive.', href: `https://wa.me/${whatsappNumber()}`, cta: 'Chat on WhatsApp', buttonClass: 'bg-whatsapp text-white hover:bg-whatsapp-dark' },
   { icon: Instagram, title: 'Instagram', handle: '@fsarchive', description: 'Follow the archive for new arrivals, behind-the-scenes looks, and early access to exclusive pieces.', href: INSTAGRAM_URL, cta: 'Follow Us', buttonClass: 'bg-primary text-on-primary hover:bg-primary/90' },
   { icon: Mail, title: 'Email', handle: EMAIL, description: 'For detailed enquiries, bespoke requests, and after-sales support — we reply within one business day.', href: `mailto:${EMAIL}`, cta: 'Send an Email', buttonClass: 'bg-tertiary text-on-tertiary hover:bg-tertiary/90' },
 ]
@@ -52,11 +52,11 @@ export function ContactPage() {
           <h2 className="font-fraunces text-3xl md:text-4xl text-on-background leading-tight mb-10">Frequently Asked Questions</h2>
           <div>{faqs.map((item, index) => { const active = open === index; return (
             <div key={item.q} className="border-b border-outline-variant">
-              <button onClick={() => setOpen(active ? null : index)} className="w-full flex items-center justify-between gap-6 py-6 text-left">
+              <button onClick={() => setOpen(active ? null : index)} aria-expanded={active} aria-controls={`contact-faq-${index}`} className="w-full flex items-center justify-between gap-6 py-6 text-left">
                 <span className={`font-fraunces text-lg md:text-xl ${active ? 'text-primary' : 'text-on-background'}`}>{item.q}</span>
                 <span className={`material-symbols-outlined text-[22px] text-on-surface-variant transition-transform duration-300 ${active ? 'rotate-45' : ''}`}>add</span>
               </button>
-              <div className={`grid transition-all duration-300 ${active ? 'grid-rows-[1fr] opacity-100 pb-6' : 'grid-rows-[0fr] opacity-0'}`}><div className="overflow-hidden"><p className="font-manrope text-sm text-on-surface-variant leading-relaxed max-w-2xl">{item.a}</p></div></div>
+              <div id={`contact-faq-${index}`} className={`grid transition-all duration-300 ${active ? 'grid-rows-[1fr] opacity-100 pb-6' : 'grid-rows-[0fr] opacity-0'}`}><div className="overflow-hidden"><p className="font-manrope text-sm text-on-surface-variant leading-relaxed max-w-2xl">{item.a}</p></div></div>
             </div>
           ) })}
           </div>

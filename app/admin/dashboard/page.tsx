@@ -173,7 +173,7 @@ export default function AdminDashboard() {
       {/* Nav */}
       <nav className="bg-[#1a0a1e] px-6 py-4 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-8">
-          <span className="font-fraunces text-white text-lg tracking-widest uppercase">Maison Rose</span>
+          <span className="font-fraunces text-white text-lg tracking-widest uppercase">FS Archives</span>
           <span className="text-white/30 text-xs">Admin</span>
         </div>
         <div className="flex items-center gap-6">
@@ -408,7 +408,7 @@ export default function AdminDashboard() {
                         )}
                       </div>
                       <div className="p-3">
-                        <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-1">Maison Rose</p>
+                        <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-1">FS Archives</p>
                         <p className="text-sm font-medium text-[#1a0a1e]">{product.name}</p>
                         <p className="text-xs text-gray-500">${Number(product.price).toLocaleString()}</p>
                       </div>

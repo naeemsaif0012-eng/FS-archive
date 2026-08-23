@@ -53,7 +53,7 @@ export default function ProductCard({ product, delay = 0 }: ProductCardProps) {
           </div>
         )}
       </div>
-      <p className="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+      <p className="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">FS Archives</p>
       <p className="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">{product.name}</p>
       {product.subtitle && (
         <p className="font-manrope text-xs text-on-surface-variant mb-1">{product.subtitle}</p>

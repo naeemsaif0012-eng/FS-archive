@@ -91,7 +91,7 @@ export default function NewProductPage() {
   return (
     <div className="min-h-screen bg-[#f9f6f2] font-manrope">
       <nav className="bg-[#1a0a1e] px-6 py-4 flex items-center justify-between">
-        <span className="font-fraunces text-white text-lg tracking-widest uppercase">Maison Rose</span>
+        <span className="font-fraunces text-white text-lg tracking-widest uppercase">FS Archives</span>
         <Link href="/admin/dashboard" className="text-xs uppercase tracking-widest text-white/50 hover:text-[#c9a8b8] transition-colors">
           ← Back to Dashboard
         </Link>

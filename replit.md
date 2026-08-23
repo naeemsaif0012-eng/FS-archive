@@ -1,4 +1,4 @@
-# Maison Rose
+# FS Archives
 
 A luxury e-commerce storefront for bags, jewelry, and accessories. React + Vite frontend with an Express API backend, backed by Supabase (Postgres + Storage).
 

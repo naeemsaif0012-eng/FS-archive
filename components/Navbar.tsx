@@ -61,7 +61,7 @@ export default function Navbar() {
             href="/"
             className="font-fraunces text-xl md:text-2xl tracking-widest text-on-background uppercase whitespace-nowrap"
           >
-            MAISON ROSE
+            FS ARCHIVES
           </Link>
         </div>
 

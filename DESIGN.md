@@ -1,5 +1,5 @@
 ---
-name: Maison Rose Editorial System
+name: FS Archives Editorial System
 colors:
   surface: '#fff8f4'
   surface-dim: '#e1d8d3'

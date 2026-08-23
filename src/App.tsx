@@ -47,9 +47,10 @@ function Routes() {
     <PublicLayout>
       <Switch>
         <Route path="/">{() => <HomePage />}</Route>
-        <Route path="/bags">{() => <CatalogPage category="bags" eyebrow="The Leather Edit" />}</Route>
-        <Route path="/jewelry">{() => <CatalogPage category="jewelry" eyebrow="Fine Jewelry" />}</Route>
-        <Route path="/accessories">{() => <CatalogPage category="accessories" eyebrow="Accessories" />}</Route>
+        <Route path="/bags">{() => <CatalogPage category="bags" eyebrow="Bags" heading="The Bag Edit" description="From everyday totes to cute statement bags, discover pieces that instantly elevate your outfit — whether you’re heading to university, work, coffee or a day out." />}</Route>
+        <Route path="/jewelry">{() => <CatalogPage category="jewelry" eyebrow="Jewelry" heading="The Jewelry Edit" description="Dainty, feminine and effortlessly wearable — discover jewellery pieces that add just the right amount of sparkle to your everyday style." />}</Route>
+        <Route path="/accessories">{() => <CatalogPage category="accessories" eyebrow="Accessories" heading="The Accessory Edit" description="All the little things you didn’t know you needed. A fun mix of cute, useful & aesthetic finds — from everyday essentials to those little pieces that instantly make life a bit prettier." />}</Route>
+        <Route path="/home">{() => <CatalogPage category="home" eyebrow="Home" heading="The Home Edit" description="Little things that make home feel even prettier. Discover a mix of cute, practical & aesthetic home essentials — from everyday must-haves to those little finds that make your space feel more you." />}</Route>
         <Route path="/product/:id">{() => <ProductDetailPage />}</Route>
         <Route path="/contact">{() => <ContactPage />}</Route>
         <Route>{() => <HomePage />}</Route>

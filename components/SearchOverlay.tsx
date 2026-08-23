@@ -33,7 +33,7 @@ export default function SearchOverlay() {
       <button onClick={closeSearch} className="absolute top-6 right-6 md:right-16">
         <span className="material-symbols-outlined text-on-surface text-[28px]">close</span>
       </button>
-      <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-on-surface-variant mb-6">Search Maison Rose</p>
+      <p className="font-manrope text-[11px] uppercase tracking-[0.18em] text-on-surface-variant mb-6">Search FS Archives</p>
       <div className="w-full max-w-2xl border-b border-on-surface flex items-center gap-4 pb-3">
         <span className="material-symbols-outlined text-on-surface-variant text-[22px]">search</span>
         <input

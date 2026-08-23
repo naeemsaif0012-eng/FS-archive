@@ -109,7 +109,7 @@ export default function HomePage() {
                     </div>
                   )}
                 </div>
-                <p className="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">Maison Rose</p>
+                <p className="font-manrope text-[10px] uppercase tracking-widest text-on-surface-variant mb-1">FS Archives</p>
                 <p className="font-fraunces text-base md:text-lg text-on-background mb-1 leading-tight">{p.name}</p>
                 <p className="font-manrope text-sm text-on-surface-variant">€ {Number(p.price).toLocaleString()}</p>
               </div>
@@ -150,7 +150,7 @@ export default function HomePage() {
             </div>
             <h2 className="stagger-up font-fraunces text-4xl md:text-5xl text-on-background mb-6 leading-tight">The Jewelry Collection</h2>
             <p className="stagger-up font-manrope text-base md:text-lg text-on-surface-variant mb-10 leading-relaxed md:ml-auto">
-              Delicate chains, ethically sourced stones, and heirloom-quality craftsmanship. Adorn yourself in timeless radiance that captures the essence of Maison Rose.
+              Delicate chains, ethically sourced stones, and heirloom-quality craftsmanship. Adorn yourself in timeless radiance that captures the essence of FS Archives.
             </p>
             <Link href="/jewelry" className="stagger-up inline-flex items-center h-[52px] px-8 bg-primary-container text-on-primary-container font-manrope text-xs uppercase tracking-widest border border-primary-container hover:bg-primary hover:text-on-primary transition-colors duration-300">
               Shop Jewelry

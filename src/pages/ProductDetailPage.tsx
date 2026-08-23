@@ -19,7 +19,7 @@ export function ProductDetailPage() {
   const [activeImage, setActiveImage] = useState(0)
   const { data: product, isLoading, isError } = useQuery({ queryKey: ['product', id], queryFn: () => api<Product>(`/products/${id}`), enabled: Number.isFinite(id) })
 
-  if (isLoading) return <main className="pt-[73px] min-h-screen bg-surface-container-lowest"><div className="max-w-container-max mx-auto px-5 md:px-margin-desktop py-16 font-manrope text-sm text-on-surface-variant">Loading…</div></main>
+  if (isLoading) return <main className="pt-[73px] min-h-screen bg-surface-container-lowest"><div className="max-w-container-max mx-auto px-5 md:px-margin-desktop py-16"><div className="grid lg:grid-cols-2 gap-10 lg:gap-16"><div><div className="skeleton aspect-[3/4]" /></div><div className="space-y-4"><div className="skeleton h-3 w-24" /><div className="skeleton h-8 w-2/3" /><div className="skeleton h-5 w-1/3" /><div className="skeleton h-6 w-24" /><div className="skeleton h-24 w-full" /><div className="flex gap-3"><div className="skeleton h-[58px] w-full" /><div className="skeleton h-[58px] w-full" /></div></div></div></div></main>
   if (isError || !product) return <main className="pt-[73px] min-h-screen bg-surface-container-lowest"><div className="max-w-container-max mx-auto px-5 md:px-margin-desktop py-16 font-manrope text-sm text-on-surface-variant">This piece could not be found. <Link href="/bags" className="text-primary underline">Back to the collection</Link></div></main>
 
   const images = product.images.filter(Boolean)
@@ -42,7 +42,7 @@ export function ProductDetailPage() {
               {overlay && <div className={`absolute inset-0 flex items-center justify-center ${overlay[1]}`}><span className="font-manrope text-xs uppercase tracking-[0.2em] font-medium">{overlay[0]}</span></div>}
               {product.badge && !overlay && <div className="absolute top-4 left-4"><span className={product.badge === 'New' ? 'px-2 py-1 bg-tertiary text-on-tertiary font-manrope text-[9px] uppercase tracking-widest' : 'px-2 py-1 bg-surface-container text-on-surface-variant font-manrope text-[9px] uppercase tracking-widest border border-outline-variant'}>{product.badge}</span></div>}
             </div>
-            {images.length > 1 && <div className="flex gap-3 mt-4">{images.map((image, index) => <button key={image + index} onClick={() => setActiveImage(index)} className={`w-20 aspect-[3/4] overflow-hidden border ${index === activeImage ? 'border-primary' : 'border-outline-variant'}`}><img src={image} alt={`${product.name} ${index + 1}`} className="w-full h-full object-cover object-center" /></button>)}</div>}
+            {images.length > 1 && <div className="flex gap-3 mt-4">{images.map((image, index) => <button key={image + index} onClick={() => setActiveImage(index)} aria-label={`View image ${index + 1} of ${images.length}`} aria-current={index === activeImage} className={`w-20 aspect-[3/4] overflow-hidden border ${index === activeImage ? 'border-primary' : 'border-outline-variant'}`}><img src={image} alt={`${product.name} ${index + 1}`} className="w-full h-full object-cover object-center" /></button>)}</div>}
           </div>
           <div className="max-w-lg">
             <p className="font-manrope text-[11px] uppercase tracking-[.18em] text-on-surface-variant mb-3">{product.category}</p>
@@ -54,8 +54,8 @@ export function ProductDetailPage() {
               <p className="font-manrope text-sm text-on-surface-variant leading-relaxed whitespace-pre-line">{product.description}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <button onClick={() => buyOnWhatsApp(product)} disabled={sold} className="flex-1 h-[58px] bg-[#25D366] text-white font-manrope text-xs uppercase tracking-widest hover:bg-[#1da851] transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Buy Now — WhatsApp</button>
-              <button onClick={() => addToCart(product.name, product.price)} disabled={sold} className="flex-1 h-[58px] border border-primary text-primary font-manrope text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Add to Bag</button>
+              <button onClick={() => buyOnWhatsApp(product)} disabled={sold} className="flex-1 h-[58px] bg-whatsapp text-white font-manrope text-xs uppercase tracking-widest hover:bg-whatsapp-dark transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Buy Now — WhatsApp</button>
+              <button onClick={() => addToCart({ id: product.id, name: product.name, price: product.price, image: images[activeImage], url: `/product/${product.id}` })} disabled={sold} className="flex-1 h-[58px] border border-primary text-primary font-manrope text-xs uppercase tracking-widest hover:bg-primary hover:text-on-primary transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Add to Bag</button>
             </div>
             {reserved && <p className="font-manrope text-xs text-amber-700 mt-4">This piece is currently reserved — contact us to place a hold.</p>}
             {sold && <p className="font-manrope text-xs text-on-surface-variant mt-4">This piece has been sold. Explore the rest of the collection for similar finds.</p>}
