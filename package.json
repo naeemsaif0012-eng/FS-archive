@@ -9,7 +9,7 @@
     "dev": "concurrently -k \"npm:dev:api\" \"npm:dev:web\"",
     "dev:web": "vite --host 0.0.0.0 --port 5000",
     "dev:api": "tsx watch server/index.ts",
-    "build": "vite build",
+    "build": "vite build && node scripts/build-api.mjs",
     "start": "tsx server/index.ts",
     "typecheck": "tsc --noEmit",
     "db:seed": "tsx server/scripts/seed.ts"
